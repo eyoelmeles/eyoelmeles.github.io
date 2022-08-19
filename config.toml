@@ -6,12 +6,13 @@ disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = ""  # add your tracking id
+staticDir = ["static"]
 
 [params]
   author = "Eyoel Meles"
   description = "Personal Blog"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
+  # logo = ""  # url or path to a logo to put in the header
 	mainSecion = ["posts"]
   [params.footer]
     text = "Eyoel Meles 2022"
