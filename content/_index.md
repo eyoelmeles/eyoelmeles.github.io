@@ -20,6 +20,7 @@ Indie Hacker based in **Ethiopia**, Studing Computer Science at Ankang Universit
 
 ### Links
 
+- [YouTube](https://www.youtube.com/channel/UCEF4jrMld3MmgUfc8g-kHCA)
 - [e-mail](mailto:thexcloud@gmail.com)
 - [GitHub](https://github.com/eyoelmeles)
 - [Twitter](https://twitter.com/joelmcmeles)
