@@ -16,12 +16,12 @@ TypeScript is a superset of JavaScript, meaning any valid JavaScript can be cons
 
 ## What is CoffeeScript?
 
-*Coffeescript* a program that takes a .coffee files and returns the JavaScript equivalent. It takes inspirations from `python` `haskal` but mostly `ruby` to make the developement expreriance familiar for people comming from these programming langugages, And also to make the code *readable* by *reducing code* and sharing *easy syntaxes* from these languages.
+*Coffeescript* a program that takes a .coffee files and returns the JavaScript equivalent. It takes inspirations from `python`, `haskal` but mostly `ruby` to make the developement expreriance familiar for people comming from these programming langugages, And also to make the code *readable* by *reducing code* and sharing *easy syntaxes* from these languages.
 
 there is *no interpretation* at runtime, everything get turned into a one-to-one equivalent of its JavaScript.
 
 
-`if` `switch` `for` all have to *return a value*
+`if`,  `switch`, and  `for` all have to *return a value*
 
 functions are created with the skinny arrow sytax
 and we use haskal/yaml like indentations to create blocks of code
@@ -74,21 +74,23 @@ for more complex data structures we have more options.
 ### Arrays
 
 Two ways of Type anotation for an Array
-    1. using TypeScript we can create an array as a tupple.
-        This way we can create an array with a different type elements inside of it.
-        ```ts
-            const message: [number, string, string] = [1, "Message 01", "2022-4-2 12:43pm"]
-        ```
-    2. we can make Array with the same type element.
-        ```ts
-            const messages: string[];
-        ```
+1. using TypeScript we can create an array as a tupple.
+    This way we can create an array with a different type elements inside of it.
+    
+    ```ts
+        const message: [number, string, string] = [1, "Message 01", "2022-4-2 12:43pm"]
+    ```
+2. we can make Array with the same type element.
+
+    ```ts
+        const messages: string[];
+    ```
 
 ### Objects and Interfaces
 
 - Objects (pretty much everything else is an object in JavaScript)
     There are several ways to type an object as well.
-    1. Interface
+    1. ### Interface
         More prefered to use interface to define objects.
         interface is quite similar to types we can use both to define object, but interface will only care about the structure of the
         object being instanciated, it checks weather it satisfies the types required. it doesn't try to be and store types like a type alias.
@@ -99,7 +101,7 @@ Two ways of Type anotation for an Array
         *Duck-Typing* means if it seems like the interface defined, then it is of that interface type, or in a better words
         > if it walk like a duck and quacks like a duck then it must be a duck.
 
-    2. Type
+    2. ### Type
         Types and Interfaces are almost the same thing, and can be used interchangably for object types
         however the key difference between them is that Types. it is called type because we are trying to
         combine types to make one big custom type. so this basically is like using union to combine types,
