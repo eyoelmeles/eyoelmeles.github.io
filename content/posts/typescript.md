@@ -1,6 +1,6 @@
 ---
 title: "Getting started with TypeScript"
-date: 2022-07-01T09:49:47+03:00
+date: 2022-07-01T05:38:16+03:00
 draft: false
 ---
 
