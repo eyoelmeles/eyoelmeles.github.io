@@ -4,7 +4,7 @@ title = "Index"
 
 ## About
 
-{{< figure class="avatar" src="/sho.png" >}}
+{{< figure class="avatar" src="/logo.png" >}}
 
 ### Eyoel Meles
 

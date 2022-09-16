@@ -70,3 +70,17 @@ I'll be sharing my solution to the challenge tomorrow. If you're a little bit be
 ## Flex-box
 
 flex items tries to be the smallest size they could be, so if there is no content they would not be visible.
+
+
+
+
+### css combinator
+
+example
+
+```css
+.col + .col {
+    /* this code will run when it has a column before it. */
+    /* this usually is used to add a margin to the middle childrens */
+}
+```
