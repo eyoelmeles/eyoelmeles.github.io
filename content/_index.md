@@ -6,9 +6,9 @@ title = "Index"
 
 {{< figure class="avatar" src="/logo.png" >}}
 
-**Eyoel Meles**
+### Eyoel Meles
 
-Indie Hacker based in **Ethiopia**, Studing Computer Science at Ankang University in China.
+Indie Hacker based in **Ethiopia**, Studing Computer Science at Xian Jiaotong University in China.
 
 ### Categories
 
@@ -16,7 +16,7 @@ Indie Hacker based in **Ethiopia**, Studing Computer Science at Ankang Universit
 - [Math](site-under_construction)
 - [Engineering](site-under_construction)
 - [Art](site-under_construction)
-- [Music](https://soundcloud.com/joel-meles)
+- [Music on SoundCloud](https://soundcloud.com/joel-meles)
 
 ### Links
 

@@ -7,7 +7,7 @@ draft: false
 ## About Me
 
 I choose HUGO because i __love GoLang__
-This is a Hugo based resume template. You can find the full source code on
+This is a Hugo Website. You can find the full source code on
 [GitHub](https://github.com/ojroques/hugo-researcher).
 
 ## Research Interest
