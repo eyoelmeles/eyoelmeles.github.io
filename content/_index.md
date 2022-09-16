@@ -8,7 +8,7 @@ title = "Index"
 
 ### Eyoel Meles
 
-Indie Hacker based in **Ethiopia**, Studing Computer Science at Xian Jiaotong University in China.
+Indie Hacker based in **Ethiopia**, Studing Computer Science at Xi'an Jiaotong University in China.
 
 ### Categories
 

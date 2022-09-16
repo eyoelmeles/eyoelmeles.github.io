@@ -16,6 +16,7 @@ probably is the most dificult thing to answer, But i will go with *Regex* as it 
 2. Search through text
 
 builtin functions in js to write regex
+
 - `match()` - search for a matching patern
 - `replace()` - replace that maching patterns
 

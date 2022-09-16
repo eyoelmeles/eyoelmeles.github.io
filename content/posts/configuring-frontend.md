@@ -207,3 +207,38 @@ the test will still pass for the App.test.tsx
 
 
 ## Editors setup for Frontend development (Vim Vs Code)
+
+
+
+
+## typescript with nodejs
+
+* TypeScript should be installed as a dev dependancy.
+  and this will make the tsc command work in this dir.
+
+* building typescript files
+
+    "scripts": {
+        "build": "tsc" # this will generate the js code.
+    }
+
+* TSNODE
+node doesn't run a ts file.
+so we need a ts-note
+`npx ts-node example.ts` # this is similar to `tsc example.ts && ./dist/example.js`
+
+## TypeScript Configuratons(tsconfig.json)
+
+* to generate a tsconfig file.
+    `npx tsc --init`
+
+* choosing the JavaScript version
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./dist", # don't want to upload this file to github. 
+    }
+
+* not generating a js file while there is a type errors.
+    1 - "strict": true,
+        or
+    2 - "noEmitOnError": true

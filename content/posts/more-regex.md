@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "More on REGEX"
 date: 2022-07-01T09:49:47+03:00
 draft: true
 ---
