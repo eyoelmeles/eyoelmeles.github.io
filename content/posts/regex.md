@@ -4,7 +4,7 @@ date: 2022-09-01T09:49:47+03:00
 draft: false
 ---
 
-# Getting started with Regular Expression / REGEX
+# Getting started with Regular Expression/REGEX
 
 ## Pronounced as Regex or rejex?
 
