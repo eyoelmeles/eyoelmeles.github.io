@@ -4,7 +4,7 @@ date: 2022-07-01T05:38:16+03:00
 draft: false
 ---
 
-![TypeScript banner from treehouse.com](http://blog.teamtreehouse.com/wp-content/uploads/2015/05/TypeScript.png)
+![TypeScript banner from treehouse.com](https://fedojo.com/wp-content/uploads/2019/05/typescript.png)
 
 ## What is TypeScript?
 
