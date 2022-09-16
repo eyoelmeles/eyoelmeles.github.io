@@ -50,7 +50,7 @@ again, it is a good practice if we are using it for titles and heading texts not
 now you already be asking what to use vw or vh? and usually this is where vmax and vmin comes in. usually the vmin
 else if we are using vmax it usally will not decrease the size, it just gets bigger and bigger.
 
-summery
+summary
 
 In this first week, we've looked at:
 Using percentages for widths
@@ -66,3 +66,7 @@ In this section of the course, you can find a few links to some extra reading th
 I'll be sharing my solution to the challenge tomorrow. If you're a little bit behind at this point, you can use today and tomorrow to catch up a little.
 
 [read](https://css-tricks.com/tale-width-max-width)
+
+## Flex-box
+
+flex items tries to be the smallest size they could be, so if there is no content they would not be visible.
