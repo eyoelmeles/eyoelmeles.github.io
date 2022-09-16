@@ -4,6 +4,8 @@ date: 2022-09-01T09:49:47+03:00
 draft: false
 ---
 
+# Getting started with Regular Expression / REGEX
+
 ## Pronounced as Regex or rejex?
 
 probably is the most dificult thing to answer, But i will go with *Regex* as it stands for **Reguar Expression**
