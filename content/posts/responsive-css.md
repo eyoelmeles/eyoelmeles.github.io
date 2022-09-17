@@ -84,3 +84,14 @@ example
     /* this usually is used to add a margin to the middle childrens */
 }
 ```
+
+### Responsive Images
+
+things to always do as a global css to have a responsive image
+
+```css
+img {
+    /* this way no overflowing or side scrolling */
+    max-width: 100%;
+}
+```
