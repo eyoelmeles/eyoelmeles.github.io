@@ -242,3 +242,150 @@ so we need a ts-note
     1 - "strict": true,
         or
     2 - "noEmitOnError": true
+
+# Vite Svelte TypeScript and eslint and prettier
+
+vite is compiling esbuild and rollup together to have a really good and fast developer expriance.
+
+tsconfig.node.json vs tsconfig.json
+
+vite is running on our machine with nodejs this is why we need tsconfig.node.json. 
+!research tsconfig.node.json
+
+## Creating a vite project.
+```bash
+  npm i vite@latest
+  # or
+  yarn create vite
+```
+
+for this blog i choose to use svelte with typescript.
+
+with vite, we can reference .tsx files inside an html, this is because when the browser requests the file, vite and esbuild work together to transpile it into js on the fly.
+
+**Question**
+
+what is the difference between assets and public folder?
+put static assets to the *assets folder* if they might be used in some sort of loader, minifier whatever to be processed before they are served.
+otherwise use the pubilc folder if they are served directly
+
+## es-lint
+
+installation
+
+  `yarn add -D eslint`
+
+then to create to configuration file.
+
+  `yarn eslint --init`
+
+this command will let us choose a framework(unfortunately svelete is not in it) and typescript for linting.
+
+## airbnb linting for react-projects.
+
+  `yarn add -D eslint-config-airbnb --peer`
+
+this deependancy needs additional dependancies, that is why we have the `--peer` flag
+
+in this case we chose to use svelte,
+
+  `yarn add -D eslint-plugin-svelte3`
+
+go to .eslintrc.cjs and add svelte3 to plugins,
+also make sure we are svelte3/svelte3 as a processor like so.
+
+```cjs
+// ...
+  plugins: [
+    'svelte3',
+    '@typescript-eslint' // add the TypeScript plugin
+  ],
+  overrides: [ // this stays the same
+    {
+      files: ['*.svelte'],
+      processor: 'svelte3/svelte3'
+    }
+  ],
+  // ....
+```
+
+now we can check if it is working correctly
+
+```ts
+let count: number = 0
+  const increment = () => {
+    count += 1
+  }
+  $: assignment = [];
+  assignment.length; // incorrect no-unsafe-member-access error
+  // You can work around this by doing
+  let another_assignment: string[];
+  $: another_assignment = [];
+  another_assignment.length; // OK
+```
+
+this code above should complain using svelte3's linting plugin
+## Checking to lint before commiting
+
+we use Husky and lint-stage to achive this process
+
+if you are using eslint and it is not working with .svelte files, then go to vscodes settengs.json and add the svelte language to the eslint.validate array.
+
+```json
+"eslint.validate": [
+  //...,
+  "svelte"
+],
+```
+
+### Adding prettier to work with eslint.
+
+installation
+
+`npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier`
+
+go to `.eslintrc.cjs` file and add `prettier` to the plugins array, And also add the `plugin:prettier/recommended` to the last index of the extends array.
+
+to custumize prettier we can create .prettierrc.cjs in the root directory and eslint will pick it up.
+```cjs
+module.exports = {
+  trailingComma: "es5",
+  doubleQuote: true,
+  semi: true,
+  tabWidth: 4,
+  // ...
+}
+```
+
+## TESTING COULD BE A BIT OVERWELMING TO PUT IT HERE ON ONE POST,
+
+### Testing with testing-library and vitest
+
+installation
+`npm install --save-dev @testing-library/svelte vitest jsdom`
+
+to compile all the svelte components for testing we need to install a plugin.
+
+`npm install --save-dev @sveltejs/vite-plugin-svelte @testing-library/jest-dom`
+
+
+`yarn add -D husky lint-staged`
+
+now Husky will create a .husky folder and inside it will have a pre-commit hook.
+
+the file should look like this
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh
+
+# run lint-staged command
+yarn  lint-staged
+```
+
+then inside the package.json:
+
+```js
+"lint-staged": {
+  "*.{js,ts,svelte}": ["svelte-check", "yarn lint:fix"]
+}
+```
