@@ -67,7 +67,6 @@ this is how my configured .eslintrc.cjs file looks like
 
 ```js
 module.exports = {
-module.exports = {
     env: {
         browser: true,
         commonjs: true,
@@ -102,8 +101,6 @@ module.exports = {
     settings: {
         "svelte3/typescript": () => require("typescript"), // pass the TypeScript package to the Svelte plugin
     },
-};
-
 };
 ```
 
