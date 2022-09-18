@@ -1,0 +1,63 @@
+<!doctype html><html lang><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Dev Enviroment for Svelte</title><meta name=description content="Personal Blog"><meta name=author content="Eyoel Meles"><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css integrity=sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2 crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous><link rel=stylesheet href=/sass/researcher.min.css><link rel=icon type=image/ico href=https://eyoelmeles.github.io/favicon.ico></head><body><div class="container mt-5"><nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0"><a class="navbar-brand mx-0 mr-sm-auto" href=https://eyoelmeles.github.io title="Eyoel Meles">Eyoel Meles</a><div class="navbar-nav flex-row flex-wrap justify-content-center"><a class="nav-item nav-link" href=/ title=index>index</a>
+<span class="nav-item navbar-text mx-1">/</span>
+<a class="nav-item nav-link" href=/posts/ title=blogs>blogs</a></div></nav></div><hr><div id=content><div class=container><p>#vite #eslint #prettier #eslint:svelte3 #husky #lint-staged #TypeScript</p><h1 id=development-enviroment-for-svelte-apps>Development Enviroment for Svelte Apps</h1><h3 id=what-is-linting-and-in-how-many-ways-can-it-help-us>What is linting and in how many ways can it help us?</h3><p><em>Linters</em> are tools integrated to editors that understand the programming language and try to help the developer by showing and fixing warnings and errors in realtime, And also help by inforcing to write a more consistent code.</p><h2 id=creating-a-svelte-project-with-vite>Creating a Svelte project with vite</h2><p>this blog uses the <code>npm</code> to manage packages.</p><p>if you are using VsCode, download the svelte extention. and the go to the settings.json and add the following,</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#e6db74>&#34;eslint.validate&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> [
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// ...,
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#e6db74>&#34;svelte&#34;</span>
+</span></span><span style=display:flex><span>]<span style=color:#960050;background-color:#1e0010>,</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;eslint.options&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> {
+</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;overrideConfig&#34;</span>: {
+</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;parserOptions&#34;</span>: {
+</span></span><span style=display:flex><span>            <span style=color:#f92672>&#34;createDefaultProgram&#34;</span>: <span style=color:#66d9ef>true</span>,
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p><code>npm create vite@latest</code> and select Svelte and TypeScript from the cli</p><p>then cd into the project and install the dependancies.</p><h2 id=linting>Linting</h2><p>to install eslint install these dev dependacies.
+<code>npm install --save-dev eslint eslint-plugin-svelte3</code> this will install linting for svelte</p><p><code>npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin</code> and this one will make eslint and typescript work together.</p><p><code>npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier</code> to install prettier and make it work with eslint.</p><p>now we need to create eslint config file. to do so
+<code>npm init @eslint/config</code> to throught the questions.</p><p>then we have to integrate all the dev packages we intalled to this file for the linting process.</p><p>in my case i choose the commonjs <code>.eslintrc.cjs</code> file extention.</p><pre tabindex=0><code class=language-cjs data-lang=cjs>module.exports = {
+module.exports = {
+    env: {
+        browser: true,
+        commonjs: true,
+        es2021: true,
+    },
+    extends: [
+        &#34;eslint:recommended&#34;,
+        &#34;plugin:@typescript-eslint/recommended&#34;,
+        &#34;plugin:@typescript-eslint/recommended-requiring-type-checking&#34;,
+        &#34;plugin:prettier/recommended&#34;,
+    ],
+    overrides: [
+        // this stays the same
+        {
+            files: [&#34;*.svelte&#34;],
+            processor: &#34;svelte3/svelte3&#34;,
+        },
+    ],
+    parser: &#34;@typescript-eslint/parser&#34;,
+    parserOptions: {
+        ecmaVersion: &#34;latest&#34;,
+        // eslint-disable-next-line no-undef
+        tsconfigRootDir: __dirname,
+        project: [&#34;./tsconfig.json&#34;],
+        extraFileExtensions: [&#34;.svelte&#34;],
+    },
+    plugins: [&#34;svelte3&#34;, &#34;@typescript-eslint&#34;, &#34;prettier&#34;],
+    rules: {
+        quotes: [&#34;error&#34;, &#34;double&#34;],
+        semi: [&#34;error&#34;, &#34;always&#34;],
+    },
+    settings: {
+        &#34;svelte3/typescript&#34;: () =&gt; require(&#34;typescript&#34;), // pass the TypeScript package to the Svelte plugin
+    },
+};
+
+};
+</code></pre><p>this is my configured .eslintrc.cjs file looks like</p><p>The <code>.prettierrc.cjs</code> file</p><pre tabindex=0><code class=language-cjs data-lang=cjs>module.exports = {
+    tabWidth: 4,
+    semi: true,
+    doubleQuote: true,
+    trailingComma: &#34;es5&#34;,
+}
+</code></pre><p>Now eslint will pick the prettier file and apply it to the project.</p></div></div><div id=footer class=mb-5><hr><div class="container text-center"><a href=https://twitter.com/joelmcmeles class="fab fa-twitter fa-1x" title=Twitter></a>
+<a href=mailto:tojoelmeles@gmail.com class="fas fa-envelope fa-1x" title=E-mail></a></div><div class="container text-center"><a href=https://github.com/eyoelmeles title="Eyoel Meles 2022"><small>Eyoel Meles 2022</small></a></div></div></body></html>
