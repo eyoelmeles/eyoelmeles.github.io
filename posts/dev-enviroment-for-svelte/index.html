@@ -13,7 +13,6 @@
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p><code>npm create vite@latest</code></p><p>Select Svelte and TypeScript from the cli</p><p>then cd into the project and install the dependancies.</p><h2 id=linting>Linting</h2><p>to install eslint install these dev dependacies.</p><p>This will install eslint linter for svelte</p><p><code>npm install --save-dev eslint eslint-plugin-svelte3</code></p><p>To make eslint and typescript work together.</p><p><code>npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin</code></p><p>Installs prettier and make it work with eslint.</p><p><code>npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier</code></p><p>now we need to create eslint config file. to do so</p><p><code>npm init @eslint/config</code></p><p>then we have to integrate all the dev packages we intalled to this file for the linting process.</p><p>in my case i choose the commonjs <code>.eslintrc.cjs</code> file extention.</p><p>this is how my configured .eslintrc.cjs file looks like</p><div class=highlight><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>module.exports <span style=color:#666>=</span> {
-</span></span><span style=display:flex><span>module.exports <span style=color:#666>=</span> {
 </span></span><span style=display:flex><span>    env<span style=color:#666>:</span> {
 </span></span><span style=display:flex><span>        browser<span style=color:#666>:</span> <span style=color:green;font-weight:700>true</span>,
 </span></span><span style=display:flex><span>        commonjs<span style=color:#666>:</span> <span style=color:green;font-weight:700>true</span>,
@@ -48,8 +47,6 @@
 </span></span><span style=display:flex><span>    settings<span style=color:#666>:</span> {
 </span></span><span style=display:flex><span>        <span style=color:#ba2121>&#34;svelte3/typescript&#34;</span><span style=color:#666>:</span> () =&gt; require(<span style=color:#ba2121>&#34;typescript&#34;</span>), <span style=color:#408080;font-style:italic>// pass the TypeScript package to the Svelte plugin
 </span></span></span><span style=display:flex><span><span style=color:#408080;font-style:italic></span>    },
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>};
 </span></span></code></pre></div><p>The <code>.prettierrc.cjs</code> file</p><div class=highlight><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>module.exports <span style=color:#666>=</span> {
 </span></span><span style=display:flex><span>    tabWidth<span style=color:#666>:</span> <span style=color:#666>4</span>,
