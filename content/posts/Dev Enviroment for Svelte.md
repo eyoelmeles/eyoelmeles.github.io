@@ -1,11 +1,11 @@
 ---
-title: "Dev Enviroment for Svelte"
+title: "Dev Environment for Svelte"
 date: 2022-09-18T10:49:40+03:00
 draft: false
 ---
 
 \#vite \#eslint \#prettier \#eslint:svelte3 \#husky \#lint-staged \#TypeScript
-# Development Enviroment for Svelte Apps
+# Development Environment for Svelte Apps
 
 ### What is linting and in how many ways can it help us?
 
@@ -33,26 +33,39 @@ if you are using VsCode, download the svelte extention. and the go to the settin
 
 ```
 
-`npm create vite@latest` and select Svelte and TypeScript from the cli
+`npm create vite@latest`
+
+Select Svelte and TypeScript from the cli
 
 then cd into the project and install the dependancies.
 
 ## Linting
 
 to install eslint install these dev dependacies.
-`npm install --save-dev eslint eslint-plugin-svelte3` this will install linting for svelte
 
-`npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin` and this one will make eslint and typescript work together.
+This will install eslint linter for svelte
 
-`npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier` to install prettier and make it work with eslint.
+`npm install --save-dev eslint eslint-plugin-svelte3`
+
+To make eslint and typescript work together.
+
+`npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+
+Installs prettier and make it work with eslint.
+
+`npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier`
 
 now we need to create eslint config file. to do so
-`npm init @eslint/config` to throught the questions.
+
+`npm init @eslint/config`
 
 then we have to integrate all the dev packages we intalled to this file for the linting process.
 
 in my case i choose the commonjs `.eslintrc.cjs` file extention.
-```cjs
+
+this is how my configured .eslintrc.cjs file looks like
+
+```js
 module.exports = {
 module.exports = {
     env: {
@@ -94,11 +107,9 @@ module.exports = {
 };
 ```
 
-this is my configured .eslintrc.cjs file looks like
+The `.prettierrc.cjs` file
 
-The `.prettierrc.cjs` file 
-
-```cjs
+```js
 module.exports = {
     tabWidth: 4,
     semi: true,
