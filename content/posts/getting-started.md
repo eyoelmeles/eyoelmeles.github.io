@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 date: 2022-07-01T09:49:47+03:00
-draft: false
+draft: true
 ---
 
 ## About Me
