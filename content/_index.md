@@ -12,7 +12,7 @@ Indie Hacker based in **Ethiopia**, Studing Computer Science at Xi'an Jiaotong U
 
 ### Categories
 
-- [Portfolio](site-under_construction)
+- [Portfolio](portfolio)
 - [Math](site-under_construction)
 - [Engineering](site-under_construction)
 - [Art](site-under_construction)
