@@ -9,7 +9,10 @@ Creating a Svelte project with vite this blog uses the npm to manage packages.</
 Why use Regex? Validate Text Search through text builtin functions in js to write regex
 match() - search for a matching patern replace() - replace that maching patterns Regex strings starts and ends with / and if there is extra information needed, we can use regex flags after the ending / like this //g the g here is a flag</description></item><item><title>Typescript</title><link>https://eyoelmeles.github.io/posts/typescripts/</link><pubDate>Fri, 01 Jul 2022 05:38:16 +0300</pubDate><guid>https://eyoelmeles.github.io/posts/typescripts/</guid><description>This is a custom typescript doc!
 Table of Content Overview The challenge Links Getting Started Basics Useful resources Examples Built with Typescript Author Acknowledgments The one half famous javascript superset that doesn&amp;rsquo;t make it though
-Coffeescript</description></item><item><title>Index</title><link>https://eyoelmeles.github.io/site-under_construction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eyoelmeles.github.io/site-under_construction/</guid><description>Site is under construction 🚧</description></item><item><title>Portfolio</title><link>https://eyoelmeles.github.io/portfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eyoelmeles.github.io/portfolio/</guid><description>👋 Hello Plus Telegram Bot
+Coffeescript
+What is Typescript It is a superset of javascript meaning, the existing javascript code is already a typescript code,
+Basics How do we get the types
+javascript without using typescript knows what the type of a variable is if it is instantiated with a value</description></item><item><title>Index</title><link>https://eyoelmeles.github.io/site-under_construction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eyoelmeles.github.io/site-under_construction/</guid><description>Site is under construction 🚧</description></item><item><title>Portfolio</title><link>https://eyoelmeles.github.io/portfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eyoelmeles.github.io/portfolio/</guid><description>👋 Hello Plus Telegram Bot
 a Moderator for telegram groups and channels
 React-Native Appstravaganza
 10 random and most popular mobile app ideas made with react-native
