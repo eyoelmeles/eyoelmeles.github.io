@@ -8,6 +8,18 @@ draft: false
 
 This is a custom typescript doc!
 
+## Table of Content
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [Getting Started](#Getting-Started)
+  - [Basics](#Basics)
+  - [Useful resources](#useful-resources)
+  - [Examples Built with Typescript](#Examples-Built-With-Typescript)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
 The one half famous javascript superset that doesn't make it though
 
 [Coffeescript](./coffeescript)
