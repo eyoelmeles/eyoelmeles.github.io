@@ -1,6 +1,6 @@
 ---
 title: "The Boyer-Moore Fast String Searching Algorithm"
-date: 2023-01-12T11:14:14.955Z
+date: 2022-09-01T09:49:47+03:00
 draft: false
 ---
 
