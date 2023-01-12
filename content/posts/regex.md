@@ -8,7 +8,7 @@ draft: false
 
 ## Pronounced as Regex or rejex?
 
-probably is the most dificult thing to answer, But i will go with *Regex* as it stands for **Reguar Expression**
+probably is the most dificult thing to answer, But i will go with _Regex_ as it stands for **Reguar Expression**
 
 ### Why use Regex?
 
@@ -33,7 +33,7 @@ These are all the Special characters.
 
 - `()` Grouping
 
-    quantifiers
+  quantifiers
 
       `?` - 0 or 1 times
 
@@ -43,23 +43,24 @@ These are all the Special characters.
 
   by adding braces `{}` we can give them explicit count.
 
-    `?r{2,6}`
+  `?r{2,6}`
 
 - `\` escape a special characters
 
-    `\d` to escape digits
+  `\d` to escape digits
 
-    `\w` to escape words
+  `\w` to escape words
 
-    `\D` to escape neither digits nor words
+  `\D` to escape neither digits nor words
 
 - `[]` Ranging
 
 - `^` Negation, do the opposite
 
 ### Flags
+
 are written at the right side of the `/` like so `//g`
-  The `g` flat turns it into a global, which will make it search for _multiple matches_
+The `g` flat turns it into a global, which will make it search for _multiple matches_
 
 visit [regexr.com](regexr.com) for more.
 it has amazing cheatsheet and traning area.
