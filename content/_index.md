@@ -4,11 +4,11 @@ title = "Index"
 
 ## About
 
-{{< figure class="avatar" src="/sho.png" >}}
+{{< figure class="avatar" src="/logo.png" >}}
 
 ### Eyoel Meles
 
-Indie Hacker based in **Ethiopia**, Studing Computer Science at Xi'an Jiaotong University in China.
+Indie Hacker based from **Ethiopia**, Studing Computer Science at Ankang University China.
 
 ### Categories
 
