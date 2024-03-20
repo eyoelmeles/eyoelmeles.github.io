@@ -5,13 +5,8 @@ draft: false
 ---
 
 > Choosing a color system really depends on the project size and complexity,
-> 
-
-> we should use color to guide the users to use the app in the right path( happy path)
-> 
-
+> we should use color to guide the users to use the app in the right path (happy path)
 > It is very useful to document the process to convince clients for visual language and branding
-> 
 
 For the very basic color system
 
