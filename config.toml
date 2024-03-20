@@ -15,7 +15,7 @@ staticDir = ["static"]
   # logo = ""  # url or path to a logo to put in the header
 	mainSecion = ["posts"]
   [params.footer]
-    text = "Eyoel Meles 2022"
+    text = "Eyoel Meles 2024"
     url = "https://github.com/eyoelmeles"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"

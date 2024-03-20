@@ -1,6 +1,6 @@
 ---
 title: 'Type Design'
-date: 2024-03-20T18:38:16+03:00
+date: 2024-02-18T10:49:40+03:00
 draft: false
 ---
 
