@@ -4,4 +4,4 @@ date: 2024-02-25T09:49:47+03:00
 draft: false
 ---
 
-[Type Design](/content/docs/design/type-design)
+[Type Design](/content/docs/design/type-design.md)
