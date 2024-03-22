@@ -1,7 +1,7 @@
 ---
 title: "Dev Environment for Svelte"
 date: 2022-09-18T10:49:40+03:00
-draft: false
+draft: true
 ---
 
 \#vite \#eslint \#prettier \#eslint:svelte3 \#husky \#lint-staged \#TypeScript

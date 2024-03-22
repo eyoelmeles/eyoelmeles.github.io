@@ -80,7 +80,7 @@ when creating a text style, the line height for the text should be the font-size
 
 if *Font-Size* = 57, then the Text-Height should be 57 + 8 = 65, this would round to 64
 
-Google Material Design
+** Google Material Design **
 
 Common example for the typeface, assume we are using ROBOTO font.
 
@@ -95,21 +95,21 @@ Common example for the typeface, assume we are using ROBOTO font.
 | Body | 16 | 22 | 0 |
 | Body Small | 14 | 22 | 0 |
 
-Apple Human Design
+** Apple Human Design **
 
-| Title | Typeface | Font Size | Line Height | Kerning |
-|-------|----------|-----------|-------------|---------|
-| Large Title | SF Pro Display | 34pt | 41pt | 0.37pt |
-| Title 1 | SF Pro Text | 28pt | 34pt | 0.36pt |
-| Title 2 | SF Pro Text | 22pt | 28pt | 0.34pt |
-| Title 3 | SF Pro Text | 20pt | 25pt | 0.38pt |
-| Headline | SF Pro Text | 17pt | 22pt | -0.41pt |
-| Body | SF Pro Text | 17pt | 22pt | -0.41pt |
-| Callout | SF Pro Text | 16pt | 21pt | -0.32pt |
-| Subhead | SF Pro Text | 15pt | 20pt | -0.24pt |
-| Footnote | SF Pro Text | 13pt | 18pt | -0.07pt |
-| Caption 1 | SF Pro Text | 12pt | 16pt | 0pt |
-| Caption 2 | SF Pro Text | 11pt | 13pt | 0.06pt |
+| Title  | Font Size | Line Height | Kerning |
+|-------|-----------|-------------|---------|
+| Large Title | 34pt | 41pt | 0.37pt |
+| Title 1 | 28pt | 34pt | 0.36pt |
+| Title 2 | 22pt | 28pt | 0.34pt |
+| Title 3 | 20pt | 25pt | 0.38pt |
+| Headline | 17pt | 22pt | -0.41pt |
+| Body | 17pt | 22pt | -0.41pt |
+| Callout | 16pt | 21pt | -0.32pt |
+| Subhead | 15pt | 20pt | -0.24pt |
+| Footnote | 13pt | 18pt | -0.07pt |
+| Caption 1 | 12pt | 16pt | 0pt |
+| Caption 2 | 11pt | 13pt | 0.06pt |
 
 For **Conning we can eyeball it, also usually good fonts have good conning. so we can leave it as 0**
 

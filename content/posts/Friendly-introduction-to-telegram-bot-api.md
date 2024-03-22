@@ -1,7 +1,7 @@
 ---
 title: "A Friendly introduction to telegram bots api"
 date: 2022-09-24T03:52:04+03:00
-draft: false
+draft: true
 ---
 
 # Telegram Bots

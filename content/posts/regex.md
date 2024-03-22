@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with REGEX"
+title: "REGEX notes"
 date: 2022-09-01T09:49:47+03:00
 draft: false
 ---
