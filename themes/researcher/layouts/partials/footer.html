@@ -1,10 +1,12 @@
 <div id="footer" class="mb-5">
     <hr>
     {{ if .Site.Params.socialIcons }}
-    <div class="container text-center row">
+    <div class="container text-center">
         <div class="row gx-2">
             {{ range $item := .Site.Pa</div>rams.socialIcons }}
+            <div class="col text-center">
                 <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>  
+            </div>
             {{ end }}
         </div>
     </div>
