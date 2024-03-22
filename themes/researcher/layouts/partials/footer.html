@@ -4,9 +4,7 @@
     <div class="container text-center">
         <div class="row gx-2 justify-content-center">
             {{ range $item := .Site.Params.socialIcons }}
-            <div class="col text-center">
                 <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
-            </div>
             {{ end }}
         </div>
     </div>
