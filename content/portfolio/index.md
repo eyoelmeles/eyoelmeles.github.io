@@ -2,21 +2,14 @@
 title = "Portfolio"
 +++
 
-  > If you know the way broadly you will see it in everything
+> _If you know the way broadly you will see it in everything_
+>
+> Miyamoto Musashi
 
-  Miyamoto Musashi
+- [React-Native Mobile Appstravaganza](https://github.com/eyoelmeles/react-native_appstravaganza)
 
-- [👋 Hello Plus Telegram Bot](https://github.com/eyoelmeles/hello-plus-telegram-bot)
+  10 random mobile app ideas made with react-native
 
-  a Moderator for telegram groups and channels
-
-- [📱 Mobile App Stravaganza](https://gitlab.com/eyoelmeles/appstravaganza)
-
-
-- [React-Native Appstravaganza](https://github.com/eyoelmeles/react-native_appstravaganza)
-
-  10 random and most popular mobile app ideas made with react-native
-
-- [Mobile app for eComerce platform](https://github.com/eyoelmeles/ecom-mobile)
-
-  get a your products and then turn them into mobile app
+- Job [Oct. 2021 - Mar. 2023](https://eyoelmeles.github.io/portfolio/top-link-technologies.md)
+    
+    Top Link Technologies (TLT) Ethiopia
