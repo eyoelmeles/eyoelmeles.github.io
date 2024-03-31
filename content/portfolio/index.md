@@ -2,11 +2,15 @@
 title = "Portfolio"
 +++
 
+<!-- Add space between the figure and the heading -->
+
 {{< figure class="avatar" src="/logo.png" >}}
+
+<br />
 
 # Eyoel Meles
 
-Full Stack Engineer focused on buiilding  Products with extra details on the user experience. I have a passion for creating and learning new things. I am a self-taught developer who loves to learn and share knowledge with others. I am a big fan of open-source and I am always looking for ways to contribute to the community.
+Full Stack Engineer focused on buiilding  Products with extra details on the user experience. I am a big fan of open-source and I am always looking for ways to contribute to the community.
 
 
 ## About
