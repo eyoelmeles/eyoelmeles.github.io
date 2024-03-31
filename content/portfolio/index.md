@@ -2,10 +2,9 @@
 title = "Portfolio"
 +++
 
-# Eyoel Meles
-
-<br />
 {{< figure class="avatar" src="/logo.png" >}}
+
+# Eyoel Meles
 
 Full Stack Engineer focused on buiilding  Products with extra details on the user experience. I am a big fan of open-source and I am always looking for ways to contribute to the community.
 
