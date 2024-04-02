@@ -5,11 +5,7 @@
       <h5 class="mb-0">{{ .Get "title" }}</h5>
     </div>
     <div class="card-body pt-0 pb-2 px-3">
-      {{ if .IsNamedParams }}
-        {{ .Inner | safeHTML }}
-      {{ else }}
         {{ .Get "content" | safeHTML }}
-      {{ end }}
     </div>
   </div>
 {{- end -}}
