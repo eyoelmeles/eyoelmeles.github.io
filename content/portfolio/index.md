@@ -21,6 +21,12 @@ Created a very big ERP project for the Ethiopian government. The project was a s
 
 ## Education
 
-### Ankang University, China(2018-2022)
+### 
 
 Bachelor of Science in Computer Science
+
+{{< card "#f7941e" >}}
+    # Ankang University, China(2018-2022)
+
+    Bachelor of Science in Computer Science
+{{</ card >}}
