@@ -22,5 +22,5 @@ Created a very big ERP project for the Ethiopian government. The project was a s
 ## Education
 
 {{< card title="Ankang University, China(2018-2022)" >}}
-Bachelor of Science in Computer Science
+Bachelors degree in Computer Science
 {{< /card >}}
