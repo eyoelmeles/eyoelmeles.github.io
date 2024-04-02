@@ -2,7 +2,7 @@
 title = "Portfolio"
 +++
 
-{{< figure class="profile_pic" src="/logo.png" >}}
+{{< figure class="avatar" src="/logo.png" >}}
 
 # Eyoel Meles
 
