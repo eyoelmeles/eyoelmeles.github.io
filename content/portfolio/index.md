@@ -6,7 +6,7 @@ title = "Portfolio"
 
 # Eyoel Meles
 
-Full Stack Engineer focused on buiilding  Products with extra details on the user experience. I am a big fan of open-source and I am always looking for ways to contribute to the community.
+Full Stack Engineer focused on buiilding Products with extra details on the user experience. I am a big fan of open-source and I am always looking for ways to contribute to the community.
 
 ## About
 
@@ -15,12 +15,27 @@ As a Full Stack Engineer, I have taken many products from scratch, through launc
 ## Work Experience
 
 ### Top Link Technologies, TLT Ethiopis PLC(Feb.2022 - Nov.2023)
+
 _Senior Software Engineer_
 
 Created a very big ERP project for the Ethiopian government. The project was a success and it is still being used by the government. led a squad, and worked on the backend and frontend of the project. Mainly focusing on the frontend, using React and Redux with typescript, and tailwindcss abstractions, for the backend, mainly helping the DevOPS to deploy .NET microservices.
 
 ## Education
 
+### Bachelors degree in Computer Science
+
+## Projects
+
+{{< columns >}}
+
+{{< card title="Ankang University, China(2018-2022)" >}}
+🍀 Bachelors degree in Computer Science
+{{< /card >}}
+
+<--->
+
 {{< card title="Ankang University, China(2018-2022)" >}}
 Bachelors degree in Computer Science
 {{< /card >}}
+
+{{< /columns >}}
