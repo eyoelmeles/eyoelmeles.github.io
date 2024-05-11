@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'True Design Manifesto'
 date: 2024-02-18T10:49:40+03:00
 draft: false
 ---
