@@ -8,37 +8,32 @@ draft: false
 
 > The True Design Manifesto is a call to arms to bring back the simplicity and directness of the web.
 
-very close to HTML, with very less CSS and JS.
-Markdown is the way to go.
+___web design shound't be a fancy abstract art, it should just be **simple formal interactive document** ___
 
 ## Introduction
 
-The web has become a cluttered mess of popups, ads, and other distractions that make it difficult to find the information needed.
+The web has evolved into a cluttered landscape, plagued by intrusive popups, obtrusive advertisements, and distracting design elements that obscure the core purpose: delivering information efficiently. Before the advent of design trends that prioritized aesthetics over functionality, the web was a straightforward and uncluttered platform, providing direct access to the desired content
 
-Before the Look at me with my new Macbook Pro drinking expensive coffee people started designing the web, it was simple to use uncluttered, direct, and most importantly easily to provide the exact information needed.
-
-now all a website is, is a bunch of popups, ads, and a whole lot of other stuff that clutters the screen without any benefit.
-
-The true design manifesto is a call to arms to bring back the simplicity and directness of the web.
+The True Design Manifesto is a call to action, advocating for a return to the web's original simplicity and directness. It champions a user-centric approach, where the design serves as a means to an end, rather than an end in itself.
 
 ## The True Design Manifesto
 
-1. **Simplicity** - The design should be simple and direct, no clutter, no popups, no ads, just the information needed.
+1. **Simplicity** - The design should be clean and uncluttered, devoid of unnecessary elements that detract from the core content. No popups, no ads, just the essential information presented in a clear and concise
 
-2. **Directness** - The design should be direct, no need to click through multiple pages to get the information needed.
+2. **Directness** - The design should facilitate direct access to the desired information, eliminating the need for excessive navigation or clicking through multiple pages.
 
-3. **Ease of Use** - The design should be easy to use, no need to scroll through multiple pages to get the information needed.
+3. **Ease of Use** - The design should prioritize intuitive usability, ensuring that users can effortlessly locate and consume the information they seek, without unnecessary complexity.
 
-4. **Accessibility** - The design should be accessible to all, no need to have a fancy computer or the latest browser to access the information needed.
+4. **Accessibility** - The design should be inclusive, catering to users with diverse abilities and technological constraints. It should not require high-end devices or the latest browsers to access the content effectively.
 
-5. **Speed** - The design should be fast, no need to wait for the page to load to get the information needed.
+5. **Speed** -The design should prioritize performance, ensuring that pages load swiftly, allowing users to access the desired information without unnecessary delays. 
 
-6. **Mobile First** - The design should be mobile first, no need to have a separate mobile site to access the information needed.
+6. **Mobile First** - The design should be optimized for mobile devices, recognizing the increasing prevalence of mobile internet usage and ensuring a seamless experience across various screen sizes.
 
-7. **Responsive** - The design should be responsive, no need to have a separate desktop site to access the information needed.
+7. **Responsive** - The design should adapt seamlessly to different devices and screen resolutions, providing a consistent and optimal user experience regardless of the viewing environment.
 
-8. **Content First** - The design should be content first, no need to have a fancy design to access the information needed.
-
-9. **User First** - The design should be user first, no need to have a fancy design to access the information needed.
+9. **User-Centric** - The design should place the user's needs at the forefront, prioritizing intuitive navigation and a well-structured user experience over superficial aesthetic considerations.
 
 10. **True Design** - The design should be true design, no need to have a fancy design to access the information needed.
+
+The True Design Manifesto advocates for a web that is functional, accessible, minimalistic and user-friendly , where the design serves as a means to an end, rather than an end in itself. By embracing these principles, we can create a more streamlined and efficient online experience, empowering users to access the information they need with ease and clarity.
