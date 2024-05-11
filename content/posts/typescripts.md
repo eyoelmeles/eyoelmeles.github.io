@@ -1,7 +1,7 @@
 ---
 title: 'Typescript'
 date: 2022-07-01T05:38:16+03:00
-draft: false
+draft: true
 ---
 
 ![TypeScript banner from fedojo.com](https://fedojo.com/wp-content/uploads/2019/05/typescript.png)

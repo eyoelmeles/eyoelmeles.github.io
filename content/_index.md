@@ -8,7 +8,7 @@ title = "Index"
 
 ### Eyoel Meles
 
-Indie Hacker based from **Ethiopia**, Studing Computer Science at Ankang University China.
+Indie Hacker, Studing Computer Science at Ankang University China.
 
 ### Categories
 
@@ -21,7 +21,7 @@ Indie Hacker based from **Ethiopia**, Studing Computer Science at Ankang Univers
 ### Links
 
 - [YouTube](https://www.youtube.com/channel/UCEF4jrMld3MmgUfc8g-kHCA)
-- [e-mail](mailto:thexcloud@gmail.com)
+- [e-mail](mailto:tojoelmeles@gmail.com)
 - [GitHub](https://github.com/eyoelmeles)
 - [Twitter](https://twitter.com/joelmcmeles)
-- [Telegram](https://t.me/nerdingishly)
+- [Telegram](https://t.me/eoel007)
