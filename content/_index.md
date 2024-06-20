@@ -11,6 +11,7 @@ Indie Hacker, Studing Computer Science at Ankang University China.
 ### Categories
 
 - [Portfolio](portfolio)
+- [Projects](project)
 - [Math](site-under_construction)
 - [Engineering](site-under_construction)
 - [Art](site-under_construction)
