@@ -64,3 +64,35 @@ The `g` flat turns it into a global, which will make it search for _multiple mat
 
 visit [regexr.com](regexr.com) for more.
 it has amazing cheatsheet and traning area.
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{imputenc}
+
+\title{begin}
+\author{michael}
+\date{July 2024}
+
+\begin{document}
+\maketitle
+
+\section\*{Introduction}
+Let's begin with a eulers formula, $e^{i\pi + 1} = 0$.
+
+\end{document}
+```
+
+\documentclass{article}
+\usepackage[utf8]{imputenc}
+
+\title{begin}
+\author{michael}
+\date{July 2024}
+
+\begin{document}
+\maketitle
+
+\section\*{Introduction}
+Let's begin with a eulers formula, $e^{i\pi + 1} = 0$.
+
+\end{document}
