@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Eyoel Meles</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Eyoel Meles</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Mar 2024 04:29:30 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intel Xerox Max series</title>
+      <link>http://localhost:1313/posts/intel-xerox-max-series/</link>
+      <pubDate>Fri, 22 Mar 2024 04:29:30 +0000</pubDate>
+      <guid>http://localhost:1313/posts/intel-xerox-max-series/</guid>
+      <description>&#xA;Features </description>
+    </item>
+    <item>
+      <title>User Interface Design System</title>
+      <link>http://localhost:1313/posts/design-system/</link>
+      <pubDate>Sun, 25 Feb 2024 09:49:47 +0300</pubDate>
+      <guid>http://localhost:1313/posts/design-system/</guid>
+      <description> Type Design Color System </description>
+    </item>
+    <item>
+      <title>True Design Manifesto</title>
+      <link>http://localhost:1313/posts/true-design-manifesto/</link>
+      <pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate>
+      <guid>http://localhost:1313/posts/true-design-manifesto/</guid>
+      <description>True Design Manifesto The True Design Manifesto is a call to arms to bring back the simplicity and directness of the web.&#xA;___web design shound&amp;rsquo;t be a fancy abstract art, it should just be simple formal interactive document ___&#xA;Introduction The web has evolved into a cluttered landscape, plagued by intrusive popups, obtrusive advertisements, and distracting design elements that obscure the core purpose: delivering information efficiently. Before the advent of design trends that prioritized aesthetics over functionality, the web was a straightforward and uncluttered platform, providing direct access to the desired content</description>
+    </item>
+    <item>
+      <title>REGEX notes</title>
+      <link>http://localhost:1313/posts/regex/</link>
+      <pubDate>Thu, 01 Sep 2022 09:49:47 +0300</pubDate>
+      <guid>http://localhost:1313/posts/regex/</guid>
+      <description>Getting started with Regular Expression/REGEX Pronounced as Regex or rejex? probably is the most dificult thing to answer, But i will go with Regex as it stands for Reguar Expression&#xA;Why use Regex? Validate Text Search through text builtin functions in js to write regex&#xA;match() - search for a matching patern replace() - replace that maching patterns Regex strings starts and ends with / and if there is extra information needed, we can use regex flags after the ending / like this //g the g here is a flag</description>
+    </item>
+    <item>
+      <title>The Boyer-Moore Fast String Searching Algorithm</title>
+      <link>http://localhost:1313/posts/the-boyer-moore-fast-string-searching-algorithm/</link>
+      <pubDate>Thu, 01 Sep 2022 09:49:47 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-boyer-moore-fast-string-searching-algorithm/</guid>
+      <description>The Boyer-Moore Fast String Searching Algorithm </description>
+    </item>
+    <item>
+      <title>Coffeescript</title>
+      <link>http://localhost:1313/posts/coffeescript/</link>
+      <pubDate>Fri, 01 Jul 2022 05:38:16 +0300</pubDate>
+      <guid>http://localhost:1313/posts/coffeescript/</guid>
+      <description>CoffeeScript why would someone who likes coffee avoids using coffeescript&#xA;CoffeeScript CoffeeScript is a programming language that compiles into JavaScript. It aims to make writing JavaScript code more concise and readable by providing a simpler syntax.&#xA;Benefits of CoffeeScript Cleaner Syntax: CoffeeScript eliminates the need for semicolons and curly braces, resulting in cleaner and more readable code.&#xA;Less Boilerplate: CoffeeScript reduces the amount of boilerplate code required in JavaScript, making development faster and more efficient.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row align-items-start gap-16">
+    {{ range split .Inner "<--->" }}
+    <div class="col">{{ . | $.Page.RenderString }}</div>
+    {{ end }}
+  </div>
+</div>
