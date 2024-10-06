@@ -8,6 +8,8 @@ we start off with simple matrices, with both Length and complexity.
 
 first we use 4x4 matrix to display how RVV works. To do so, we write the algorithm in C first then talk about the instructions while we are writing the assembly code.
 
+For the proggrams bellow assume we are using `VLEN` as 128bit
+
 ```c
 #include <stdio.h>
 
