@@ -4,7 +4,7 @@ title: "React Native Appstravaganza"
 
 # React Native Appstravaganza
 
-a list of complete and partially complete react native mainly mobile applications, The applications are designed to have a eye catching and useful UX.
+A curated selection of my completed and ongoing React Native mobile applications, each crafted with a focus on delivering a visually appealing and highly functional user experience.
 
 {{< columns >}}
 
