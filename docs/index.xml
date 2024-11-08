@@ -1,8 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Eyoel Meles</title><link>https://eyoelmeles.github.io/docs/</link><description>Recent content in Docs on Eyoel Meles</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 18 Feb 2024 10:49:40 +0300</lastBuildDate><atom:link href="https://eyoelmeles.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Addressing Schema</title><link>https://eyoelmeles.github.io/docs/computer-fundamentals/addressing-bytes/</link><pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate><guid>https://eyoelmeles.github.io/docs/computer-fundamentals/addressing-bytes/</guid><description> Address of the operands
-Paging Segmentation</description></item><item><title>Color System</title><link>https://eyoelmeles.github.io/docs/design/color-design/</link><pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate><guid>https://eyoelmeles.github.io/docs/design/color-design/</guid><description>Choosing a color system really depends on the project size and complexity, we should use color to guide the users to use the app in the right path (happy path) It is very useful to document the process to convince clients for visual language and branding
-For the very basic color system
-The whole thing about colors there are only three color categories
-Brand color ( buttons, icons, links …) Supporting color ( usually to draw attention, used less often than brand colors, usually error messages, confirmation, information) Neutral color (Most of the UI is from this category, some form of gray.</description></item><item><title>Type Design</title><link>https://eyoelmeles.github.io/docs/design/type-design/</link><pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate><guid>https://eyoelmeles.github.io/docs/design/type-design/</guid><description>Type Design The whole idea is to show importance hierarchy and increase readability
-Hierarchy: A typographical scale is essential for creating a visual hierarchy in your design. it is important to establish a clear relationship between different elements of your design using typography.
-Consider which element should be emphasized and use font sizes and weights to create hierarchy.
-Legibility: The typography you choose should be easy to read and legible at different sizes.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Eyoel Meles</title><link>https://eyoelmeles.github.io/docs/</link><description>Recent content in Docs on Eyoel Meles</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 18 Feb 2024 10:49:40 +0300</lastBuildDate><atom:link href="https://eyoelmeles.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Addressing Schema</title><link>https://eyoelmeles.github.io/docs/computer-fundamentals/addressing-bytes/</link><pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate><guid>https://eyoelmeles.github.io/docs/computer-fundamentals/addressing-bytes/</guid><description>&lt;blockquote>
+&lt;p>Address of the operands&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="paging">Paging&lt;/h2>
+&lt;h2 id="segmentation">Segmentation&lt;/h2></description></item><item><title>Color System</title><link>https://eyoelmeles.github.io/docs/design/color-design/</link><pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate><guid>https://eyoelmeles.github.io/docs/design/color-design/</guid><description>&lt;blockquote>
+&lt;p>Choosing a color system really depends on the project size and complexity,
+we should use color to guide the users to use the app in the right path (happy path)
+It is very useful to document the process to convince clients for visual language and branding&lt;/p>
+&lt;/blockquote>
+&lt;p>For the very basic color system&lt;/p>
+&lt;p>The whole thing about colors there are only three color categories&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Brand color&lt;/strong> ( buttons, icons, links …)&lt;/li>
+&lt;li>&lt;strong>Supporting color&lt;/strong> ( usually to draw attention, used less often than brand colors, usually error messages, confirmation, information)&lt;/li>
+&lt;li>&lt;strong>Neutral color&lt;/strong> (Most of the UI is from this category, some form of gray. Text, background, secondary button, border color).&lt;/li>
+&lt;/ul>
+&lt;h3 id="branding-color">Branding color&lt;/h3>
+&lt;p>To Pick a brand color we need to pick something in between the shade and tint&lt;/p></description></item><item><title>Type Design</title><link>https://eyoelmeles.github.io/docs/design/type-design/</link><pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate><guid>https://eyoelmeles.github.io/docs/design/type-design/</guid><description>&lt;h1 id="type-design">Type Design&lt;/h1>
+&lt;blockquote>
+&lt;p>The whole idea is to show importance hierarchy and increase readability&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Hierarchy&lt;/strong>: A typographical scale is essential for creating a visual hierarchy in your design. it is important to establish a clear relationship between different elements of your design using typography.&lt;/p>
+&lt;p>Consider which element should be emphasized and use font sizes and weights to create hierarchy.&lt;/p>
+&lt;p>&lt;strong>Legibility&lt;/strong>: The typography you choose should be easy to read and legible at different sizes. when selecting a font, pay attention to your size, weight, and spacing of the letters, as well as the contrast between the text and the background. You should ensure that the font you choose is easy to read on different devices and in different lighting conditions.&lt;/p></description></item></channel></rss>

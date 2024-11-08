@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Eyoel Meles</title><link>https://eyoelmeles.github.io/project/</link><description>Recent content in Projects on Eyoel Meles</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://eyoelmeles.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>React Native Appstravaganza</title><link>https://eyoelmeles.github.io/project/react-native/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eyoelmeles.github.io/project/react-native/</guid><description>React Native Appstravaganza A curated selection of my completed and ongoing React Native mobile applications, each crafted with a focus on delivering a visually appealing and highly functional user experience.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Eyoel Meles</title><link>https://eyoelmeles.github.io/project/</link><description>Recent content in Projects on Eyoel Meles</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://eyoelmeles.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>React Native Appstravaganza</title><link>https://eyoelmeles.github.io/project/react-native/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eyoelmeles.github.io/project/react-native/</guid><description>&lt;h1 id="react-native-appstravaganza">React Native Appstravaganza&lt;/h1>
+&lt;p>A curated selection of my completed and ongoing React Native mobile applications, each crafted with a focus on delivering a visually appealing and highly functional user experience.&lt;/p>
+&lt;div class="container">
+ &lt;div class="row align-items-start gap-16">
+ 
+ &lt;div class="col">&lt;figure>&lt;img src="https://eyoelmeles.github.io/slide_carousel.gif">
+&lt;/div>
+ 
+ &lt;div class="col">&lt;figure>&lt;img src="https://eyoelmeles.github.io/3d_carousel.gif">
+&lt;/div>
+ 
+ &lt;div class="col">&lt;figure>&lt;img src="https://eyoelmeles.github.io/vertical_scroll.gif">
+&lt;/div>
+ 
+ &lt;/div>
+&lt;/div></description></item></channel></rss>
