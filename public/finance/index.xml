@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance on Eyoel Meles</title>
+    <link>http://localhost:1313/finance/</link>
+    <description>Recent content in Finance on Eyoel Meles</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Nov 2024 02:17:18 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview of ISO 8583 Card Transaction Standard</title>
+      <link>http://localhost:1313/finance/iso-8583_financial_transation_standard/</link>
+      <pubDate>Sat, 09 Nov 2024 02:17:18 +0800</pubDate>
+      <guid>http://localhost:1313/finance/iso-8583_financial_transation_standard/</guid>
+      <description>&lt;h1 id=&#34;overview-of-iso-8583-card-transaction-standard&#34;&gt;Overview of ISO 8583 Card Transaction Standard&lt;/h1&gt;&#xA;&lt;p&gt;Set of standards, for transactions created by the card holders.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
