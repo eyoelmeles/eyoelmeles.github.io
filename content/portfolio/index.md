@@ -14,4 +14,4 @@ Full-stack Engineer focused on building products with extra care for details for
 
 _Senior Software Engineer_
 
-Created a very big ERP project for the Ethiopian government. The project was a success and it is still being used by the government. I led a squad, and worked on both the backend and frontend part of the project. Mainly focusing on the frontend, using React and Redux with typescript, and tailwindcss abstractions, for the backend, mainly helping the DevOPS to deploy .NET microservices.
+Created a big ERP Software for the Ministry of Water and Energy Ethiopia. The project was a success and it is now spread into different regions of Ethiopia. I led a team, and worked on both the backend and frontend parts of the project. Mainly focusing on the Finance and HR modules, I worked on the front-end using my React experties, and the backend with C#, as a side quest helping the Dev-OPS teams to deploy .NET microservices with CI/CD integration as well.

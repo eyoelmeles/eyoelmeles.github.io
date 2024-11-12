@@ -4,7 +4,7 @@ title = "Index"
 
 {{< figure class="avatar" src="/logo.png" >}}
 
-### Eyoel Meles
+### About
 
 Indie Hacker, Studing Computer Science at Ankang University China.
 
