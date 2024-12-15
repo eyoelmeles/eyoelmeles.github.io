@@ -1,5 +1,6 @@
 ---
 title: "React Native Appstravaganza"
+date: 2024-12-15T19:53:22+08:00
 ---
 
 # React Native Appstravaganza

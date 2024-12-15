@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overview of ISO 8583 Card Transaction Standard</title>
-      <link>http://localhost:1313/finance/iso-8583_financial_transation_standard/</link>
+      <link>http://localhost:1313/economics/iso-8583_financial_transation_standard/</link>
       <pubDate>Sat, 09 Nov 2024 02:17:18 +0800</pubDate>
-      <guid>http://localhost:1313/finance/iso-8583_financial_transation_standard/</guid>
+      <guid>http://localhost:1313/economics/iso-8583_financial_transation_standard/</guid>
       <description>&lt;h1 id=&#34;overview-of-iso-8583-card-transaction-standard&#34;&gt;Overview of ISO 8583 Card Transaction Standard&lt;/h1&gt;&#xA;&lt;p&gt;Set of standards, for transactions created by the card holders.&lt;/p&gt;</description>
     </item>
     <item>
@@ -97,13 +97,13 @@
       <link>http://localhost:1313/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/</guid>
-      <description>&lt;figure class=&#34;avatar&#34;&gt;&lt;img src=&#34;http://localhost:1313/logo.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;eyoel-meles&#34;&gt;Eyoel Meles&lt;/h1&gt;&#xA;&lt;p&gt;Full-stack Engineer focused on building products with extra care for details for user&amp;rsquo;s experience. I am a big fan of open-source, and I am always looking for ways to contribute to the community.&lt;/p&gt;&#xA;&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;top-link-technologies-tlt-ethiopis-plcfeb2022---nov2023&#34;&gt;Top Link Technologies, TLT Ethiopis PLC(Feb.2022 - Nov.2023)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Senior Software Engineer&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Created a very big ERP project for the Ethiopian government. The project was a success and it is still being used by the government. I led a squad, and worked on both the backend and frontend part of the project. Mainly focusing on the frontend, using React and Redux with typescript, and tailwindcss abstractions, for the backend, mainly helping the DevOPS to deploy .NET microservices.&lt;/p&gt;</description>
+      <description>&lt;figure class=&#34;avatar&#34;&gt;&lt;img src=&#34;http://localhost:1313/logo.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;eyoel-meles&#34;&gt;Eyoel Meles&lt;/h1&gt;&#xA;&lt;p&gt;Full-stack Engineer focused on building products with extra care for details for user&amp;rsquo;s experience. I am a big fan of open-source, and I am always looking for ways to contribute to the community.&lt;/p&gt;&#xA;&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;top-link-technologies-tlt-ethiopis-plcfeb2022---nov2023&#34;&gt;Top Link Technologies, TLT Ethiopis PLC(Feb.2022 - Nov.2023)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Senior Software Engineer&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Created a big ERP Software for the Ministry of Water and Energy Ethiopia. The project was a success and it is now spread into different regions of Ethiopia. I led a team, and worked on both the backend and frontend parts of the project. Mainly focusing on the Finance and HR modules, I worked on the front-end using my React experties, and the backend with C#, as a side quest helping the Dev-OPS teams to deploy .NET microservices with CI/CD integration as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>React Native Appstravaganza</title>
-      <link>http://localhost:1313/project/react-native/</link>
+      <link>http://localhost:1313/project/react-native/appstravaganza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/react-native/</guid>
+      <guid>http://localhost:1313/project/react-native/appstravaganza/</guid>
       <description>&lt;h1 id=&#34;react-native-appstravaganza&#34;&gt;React Native Appstravaganza&lt;/h1&gt;&#xA;&lt;p&gt;A curated selection of my completed and ongoing React Native mobile applications, each crafted with a focus on delivering a visually appealing and highly functional user experience.&lt;/p&gt;&#xA;&lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;row align-items-start gap-16&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;col&#34;&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/slide_carousel.gif&#34;&gt;&#xA;&lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;col&#34;&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/3d_carousel.gif&#34;&gt;&#xA;&lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;col&#34;&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/vertical_scroll.gif&#34;&gt;&#xA;&lt;/div&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
