@@ -12,10 +12,7 @@ Indie Hacker, Studing Computer Science at Ankang University China.
 
 - [Resume](portfolio)
 - [Projects](project)
-- [Math](math)
-- [Economics](economics)
-- [Engineering](site-under_construction)
-- [Art](site-under_construction)
+- [Finance](finance)
 - [Music on SoundCloud](https://soundcloud.com/joel-meles)
 
 ### Links

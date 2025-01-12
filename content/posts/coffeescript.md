@@ -1,7 +1,7 @@
 ---
 title: 'Coffeescript'
 date: 2022-07-01T05:38:16+03:00
-draft: false
+draft: true
 ---
 
 ![Coffeescript logo](http://aseemk.com/images/coffeescript-talk/coffeescript-logo.png)

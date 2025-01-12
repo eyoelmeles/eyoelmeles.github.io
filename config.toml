@@ -1,6 +1,6 @@
 baseURL = "https://eyoelmeles.github.io/"
 languageCode = "en-us"
-title = "Eyoel Meles"
+title = "0x31"
 theme = "researcher"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true

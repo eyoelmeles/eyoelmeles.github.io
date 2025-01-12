@@ -1,54 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Eyoel Meles</title>
+    <title>Posts on 0x31</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Eyoel Meles</description>
+    <description>Recent content in Posts on 0x31</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Mar 2024 04:29:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2025 02:17:18 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Intel Xerox Max series</title>
-      <link>http://localhost:1313/posts/intel-xerox-max-series/</link>
-      <pubDate>Fri, 22 Mar 2024 04:29:30 +0000</pubDate>
-      <guid>http://localhost:1313/posts/intel-xerox-max-series/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-11/newsroom-intel-xeon-cpu-max-series-badge.png.rendition.intel.web.1280.720.png&#34; alt=&#34;Intel Xerox Max series&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;</description>
-    </item>
-    <item>
-      <title>User Interface Design System</title>
-      <link>http://localhost:1313/posts/design-system/</link>
-      <pubDate>Sun, 25 Feb 2024 09:49:47 +0300</pubDate>
-      <guid>http://localhost:1313/posts/design-system/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://eyoelmeles.github.io/docs/design/type-design&#34;&gt;Type Design&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://eyoelmeles.github.io/docs/design/color-design&#34;&gt;Color System&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>True Design Manifesto</title>
-      <link>http://localhost:1313/posts/true-design-manifesto/</link>
-      <pubDate>Sun, 18 Feb 2024 10:49:40 +0300</pubDate>
-      <guid>http://localhost:1313/posts/true-design-manifesto/</guid>
-      <description>&lt;h1 id=&#34;true-design-manifesto&#34;&gt;True Design Manifesto&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The True Design Manifesto is a call to arms to bring back the simplicity and directness of the web.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;___web design shound&amp;rsquo;t be a fancy abstract art, it should just be &lt;strong&gt;simple formal interactive document&lt;/strong&gt; ___&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The web has evolved into a cluttered landscape, plagued by intrusive popups, obtrusive advertisements, and distracting design elements that obscure the core purpose: delivering information efficiently. Before the advent of design trends that prioritized aesthetics over functionality, the web was a straightforward and uncluttered platform, providing direct access to the desired content&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>REGEX notes</title>
-      <link>http://localhost:1313/posts/regex/</link>
-      <pubDate>Thu, 01 Sep 2022 09:49:47 +0300</pubDate>
-      <guid>http://localhost:1313/posts/regex/</guid>
-      <description>&lt;h1 id=&#34;getting-started-with-regular-expressionregex&#34;&gt;Getting started with Regular Expression/REGEX&lt;/h1&gt;&#xA;&lt;h2 id=&#34;pronounced-as-regex-or-rejex&#34;&gt;Pronounced as Regex or rejex?&lt;/h2&gt;&#xA;&lt;p&gt;probably is the most dificult thing to answer, But i will go with &lt;em&gt;Regex&lt;/em&gt; as it stands for &lt;strong&gt;Reguar Expression&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-regex&#34;&gt;Why use Regex?&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Validate Text&lt;/li&gt;&#xA;&lt;li&gt;Search through text&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;builtin functions in js to write regex&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;match()&lt;/code&gt; - search for a matching patern&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;replace()&lt;/code&gt; - replace that maching patterns&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Regex strings starts and ends with &lt;code&gt;/&lt;/code&gt; and if there is extra information needed, we can use regex flags after the ending &lt;code&gt;/&lt;/code&gt;&#xA;like this &lt;code&gt;//g&lt;/code&gt; the &lt;code&gt;g&lt;/code&gt; here is a flag&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Boyer-Moore Fast String Searching Algorithm</title>
-      <link>http://localhost:1313/posts/the-boyer-moore-fast-string-searching-algorithm/</link>
-      <pubDate>Thu, 01 Sep 2022 09:49:47 +0300</pubDate>
-      <guid>http://localhost:1313/posts/the-boyer-moore-fast-string-searching-algorithm/</guid>
-      <description>&lt;h2 id=&#34;the-boyer-moore-fast-string-searching-algorithm&#34;&gt;The Boyer-Moore Fast String Searching Algorithm&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>Coffeescript</title>
-      <link>http://localhost:1313/posts/coffeescript/</link>
-      <pubDate>Fri, 01 Jul 2022 05:38:16 +0300</pubDate>
-      <guid>http://localhost:1313/posts/coffeescript/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://aseemk.com/images/coffeescript-talk/coffeescript-logo.png&#34; alt=&#34;Coffeescript logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;coffeescript&#34;&gt;CoffeeScript&lt;/h2&gt;&#xA;&lt;p&gt;why would someone who likes coffee avoids using coffeescript&lt;/p&gt;&#xA;&lt;h2 id=&#34;coffeescript-1&#34;&gt;CoffeeScript&lt;/h2&gt;&#xA;&lt;p&gt;CoffeeScript is a programming language that compiles into JavaScript. It aims to make writing JavaScript code more concise and readable by providing a simpler syntax.&lt;/p&gt;&#xA;&lt;h3 id=&#34;benefits-of-coffeescript&#34;&gt;Benefits of CoffeeScript&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cleaner Syntax&lt;/strong&gt;: CoffeeScript eliminates the need for semicolons and curly braces, resulting in cleaner and more readable code.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Less Boilerplate&lt;/strong&gt;: CoffeeScript reduces the amount of boilerplate code required in JavaScript, making development faster and more efficient.&lt;/p&gt;</description>
+      <title>Overview of ISO 8583 Card Transaction Standard</title>
+      <link>http://localhost:1313/posts/iso-8583_financial_transation_standard/</link>
+      <pubDate>Thu, 02 Jan 2025 02:17:18 +0800</pubDate>
+      <guid>http://localhost:1313/posts/iso-8583_financial_transation_standard/</guid>
+      <description>&lt;h1 id=&#34;overview-of-iso-8583-card-transaction-standard&#34;&gt;Overview of ISO 8583 Card Transaction Standard&lt;/h1&gt;&#xA;&lt;p&gt;Set of standards, for transactions created by the card holders.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

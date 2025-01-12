@@ -6,12 +6,12 @@
     <description>Recent content in React Native on Eyoel Meles</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2024 19:53:22 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/project/react-native/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React Native Appstravaganza</title>
       <link>http://localhost:1313/project/react-native/appstravaganza/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Dec 2024 19:53:22 +0800</pubDate>
       <guid>http://localhost:1313/project/react-native/appstravaganza/</guid>
       <description>&lt;h1 id=&#34;react-native-appstravaganza&#34;&gt;React Native Appstravaganza&lt;/h1&gt;&#xA;&lt;p&gt;A curated selection of my completed and ongoing React Native mobile applications, each crafted with a focus on delivering a visually appealing and highly functional user experience.&lt;/p&gt;&#xA;&lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;row align-items-start gap-16&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;col&#34;&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/slide_carousel.gif&#34;&gt;&#xA;&lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;col&#34;&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/3d_carousel.gif&#34;&gt;&#xA;&lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;col&#34;&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/vertical_scroll.gif&#34;&gt;&#xA;&lt;/div&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
