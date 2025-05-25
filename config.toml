@@ -4,7 +4,7 @@ title = "Eyoel Meles"
 theme = "researcher"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
-math = true          # enable KaTeX (https://katex.org/) globally
+math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = ""  # add your tracking id
 staticDir = ["static"]
 

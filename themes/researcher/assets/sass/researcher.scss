@@ -2,15 +2,15 @@
     font-family: 'Inconsolata';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/Inconsolata-Regular') format('woff2');
-  }
+    src: url('/fonts/Inconsolata-Regular.woff2') format('woff2');
+}
   
-  @font-face {
+@font-face {
     font-family: 'Inconsolata';
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/Inconsolata-Bold') format('woff2'),
-  }
+    src: url('/fonts/Inconsolata-Bold.woff2') format('woff2');
+}
 
 // Sizes
 $max-width: {{ .Param "style.pageWidth" | default "750px;" }};
