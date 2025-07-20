@@ -6,7 +6,7 @@ title = "Index"
 
 ### About
 
-Indie Hacker, Studing Computer Science at Ankang University China.
+Graduate student of Yunnan University, China
 
 ### Categories
 
