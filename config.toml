@@ -16,7 +16,7 @@ staticDir = ["static"]
 	mainSecion = ["posts"]
   math = true
   [params.footer]
-    text = "Eyoel Meles 2024"
+    text = "Eyoel Meles 2025"
     url = "https://github.com/eyoelmeles"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
