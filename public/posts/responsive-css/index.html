@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang=""><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <title>Response web design with css</title>
+  <meta name="description" content="Personal Blog" />
+  <meta name="author" content="Eyoel Meles" />
+
+  
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+  />
+
+  
+  <link rel="stylesheet" href="/sass/researcher.min.css" />
+
+  
+  <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
+   
+</head>
+<link rel="stylesheet" href="sass/katex.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+  integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+  crossorigin="anonymous"
+/>
+<script defer src="/js/katex.min.js"></script>
+<script defer src="/js/auto-rennder.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+  integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+  integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
+  });
+</script>
+
+    <body><div class="container mt-5">
+  <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+    <a
+      class="navbar-brand mx-0 mr-sm-auto"
+      href="http://localhost:1313/"
+      title="Eyoel Meles"
+    >
+       Eyoel Meles
+    </a>
+    <div class="navbar-nav flex-row flex-wrap justify-content-center">
+        
+      <a
+        class="nav-item nav-link"
+        href="/"
+        title="index"
+      >
+        index
+      </a>
+      
+      <span class="nav-item navbar-text mx-1">/</span>
+       
+      <a
+        class="nav-item nav-link"
+        href="/posts/"
+        title="blogs"
+      >
+        blogs
+      </a>
+        
+    </div>
+  </nav>
+</div>
+<hr />
+<div id="content">
+<div class="container"><h2 id="responsive-web-design-with-css">Responsive web design with css</h2>
+<p><strong>All Block level elements are Responsive</strong></p>
+<p>Meaning they have 100% width of their parent container and height of their inner content.
+therefore setting a custom width or height to the parent or child will come with a consequence which will make the element less responsive.
+the problem is the element will eventually overflow. and we have to scroll to see all of the element.</p>
+<p><strong>Percentages vs fixed width</strong></p>
+<p>however setting the width with the percent will make this problem go away, however we don&rsquo;t want to set width or height of elements unless it is necessary.</p>
+<p>specially heights are very dangerous as the screen size changes the element inside the container starts to overflow.
+a way to combat this setting the height property is to use padding instead of giving it a height.</p>
+<p>the take away here is we always want to be using padding or childs margin to specify the height instead of a fixed value or even a percent as it will overflow the content.</p>
+<p><strong>em and rem</strong></p>
+<p>em&rsquo;s get compounding effect, and root em(rem) will not.
+since em&rsquo;s get compound be careful when using the ul when they indent goes on and on</p>
+<p>and we usually should use the rem for font-size</p>
+<p>one thing to use em quite frequently is for setting a padding and margin property on the parent container, this will make it more adaptive so that when the font-size changes the whole container will also get bigger. therefore when we are using media query we are only changing the font-size and the whole thing adapts beautifully. they are very helpful to with a media query letter on.</p>
+<p>max and min width and height</p>
+<p>max-width usually is helpful when it comes to giving the width of a fixed size for a bigger screens
+usually we don&rsquo;t want to use the min-width as it will try to fight the default responsiveness of css. it is like using height don&rsquo;t use it unless it is very necessary.</p>
+<p>when setting a max with it usually is in px</p>
+<p>vw vh and vmin and vmax</p>
+<p>vmax takes the largest side either the width or the height of the viewport and deciede to use vw or vh based on that.
+so if the screen is wider then vmax will be the same as vw else it will me vh.</p>
+<p>so usually it is useful when it comes to mobile and desktop design choices</p>
+<p>it is also a good practice to use the vw or vh for the font-size of the title texts, but we have to clamp it for big and very small size screens.
+again, it is a good practice if we are using it for titles and heading texts not on paragraph as they will shink a lot and make it less visible.</p>
+<p>now you already be asking what to use vw or vh? and usually this is where vmax and vmin comes in. usually the vmin
+else if we are using vmax it usally will not decrease the size, it just gets bigger and bigger.</p>
+<p>summary</p>
+<p>In this first week, we&rsquo;ve looked at:
+Using percentages for widths
+Avoiding to set heights
+Using max-width</p>
+<p>While there is nothing overly complicated with any of that, being comfortable with these things is the key to mastering responsive layouts.</p>
+<p>With a good understanding of the above, all we need is a little flexbox and we&rsquo;re going to start knocking even complex layouts out of the park!</p>
+<p>In this section of the course, you can find a few links to some extra reading that you can do if you&rsquo;re looking to continue learning a bit. They&rsquo;ll help supplement what we&rsquo;re covering here, but none of it is required reading 😊.</p>
+<p>I&rsquo;ll be sharing my solution to the challenge tomorrow. If you&rsquo;re a little bit behind at this point, you can use today and tomorrow to catch up a little.</p>
+<p><a href="https://css-tricks.com/tale-width-max-width">read</a></p>
+<h2 id="flex-box">Flex-box</h2>
+<p>flex items tries to be the smallest size they could be, so if there is no content they would not be visible.</p>
+<h3 id="css-combinator">css combinator</h3>
+<p>example</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#00f;font-weight:bold">col</span> <span style="color:#666">+</span> .<span style="color:#00f;font-weight:bold">col</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">/* this code will run when it has a column before it. */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">/* this usually is used to add a margin to the middle childrens */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="responsive-images">Responsive Images</h3>
+<p>things to always do as a global css to have a responsive image</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">img</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">/* this way no overflowing or side scrolling */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">max-width</span>: <span style="color:#666">100</span><span style="color:#b00040">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    <div class="container text-center">
+        <div class="row gx-5 justify-content-center">
+            
+                <a href="https://twitter.com/joelmcmeles" class="fab fa-twitter fa-1x" title="Twitter"></a>
+            
+                <a href="mailto:tojoelmeles@gmail.com" class="fas fa-envelope fa-1x" title="E-mail"></a>
+            
+        </div>
+    </div>
+    
+    
+        <div class="container text-center">
+            <a href="https://github.com/eyoelmeles" title="Eyoel Meles 2025"><small>Eyoel Meles 2025</small></a>
+        </div>
+    
+</div>
+</body>
+</html>

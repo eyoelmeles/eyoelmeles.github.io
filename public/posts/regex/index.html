@@ -6,7 +6,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
 
-  <title>Posts</title>
+  <title>REGEX notes</title>
   <meta name="description" content="Personal Blog" />
   <meta name="author" content="Eyoel Meles" />
 
@@ -31,8 +31,6 @@
 
   
   <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
-   
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="Eyoel Meles" />
    
 </head>
 <link rel="stylesheet" href="sass/katex.min.css" />
@@ -106,30 +104,70 @@
 </div>
 <hr />
 <div id="content">
-<div class="container">
-  <h1>Posts</h1>
-  <ul class="container">
-    
-    <li>
-      <a href="http://localhost:1313/posts/get_better/"
-        >2025-11-27 | Get Better</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/risc-v/"
-        >2025-09-18 | RISC V</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/writing-paper/"
-        >2025-09-18 | Writing Paper with AI</a
-      >
-    </li>
-    
-  </ul>
-</div>
+<div class="container"><h1 id="getting-started-with-regular-expressionregex">Getting started with Regular Expression/REGEX</h1>
+<h2 id="pronounced-as-regex-or-rejex">Pronounced as Regex or rejex?</h2>
+<p>probably is the most dificult thing to answer, But i will go with <em>Regex</em> as it stands for <strong>Reguar Expression</strong></p>
+<h3 id="why-use-regex">Why use Regex?</h3>
+<ol>
+<li>Validate Text</li>
+<li>Search through text</li>
+</ol>
+<p>builtin functions in js to write regex</p>
+<ul>
+<li><code>match()</code> - search for a matching patern</li>
+<li><code>replace()</code> - replace that maching patterns</li>
+</ul>
+<p>Regex strings starts and ends with <code>/</code> and if there is extra information needed, we can use regex flags after the ending <code>/</code>
+like this <code>//g</code> the <code>g</code> here is a flag</p>
+<h3 id="special-regex-characters">Special Regex Characters</h3>
+<p>These are all the Special characters.</p>
+<p><code>.^&amp;*+-?()[]{}\|</code></p>
+<ul>
+<li>
+<p><code>|</code> logical OR</p>
+</li>
+<li>
+<p><code>()</code> Grouping</p>
+<p>quantifiers</p>
+<pre><code>`?` - 0 or 1 times
+
+`*` - 0 or multiple times
+
+`+` - 1 or multiple times
+</code></pre>
+<p>by adding braces <code>{}</code> we can give them explicit count.</p>
+<p><code>?r{2,6}</code></p>
+</li>
+<li>
+<p><code>\</code> escape a special characters</p>
+<p><code>\d</code> to escape digits</p>
+<p><code>\w</code> to escape words</p>
+<p><code>\D</code> to escape neither digits nor words</p>
+</li>
+<li>
+<p><code>[]</code> Ranging</p>
+</li>
+<li>
+<p><code>^</code> Negation, do the opposite</p>
+</li>
+</ul>
+<h3 id="flags">Flags</h3>
+<p>are written at the right side of the <code>/</code> like so <code>//g</code>
+The <code>g</code> flat turns it into a global, which will make it search for <em>multiple matches</em></p>
+<p>visit <a href="regexr.com">regexr.com</a> for more.
+it has amazing cheatsheet and traning area.</p>
+<p>This is an inline \(a^*=x-b^*\) equation.</p>
+<p>These are block equations:</p>
+\[a^*=x-b^*\]\[ a^*=x-b^* \]\[
+a^*=x-b^*
+\]<p>These are block equations using alternate delimiters:</p>
+$$a^*=x-b^*$$$$ a^*=x-b^* $$$$
+a^*=x-b^*
+$$$$ e^{i\pi + 1} = 0 $$$$ \iiint f(x,y,z)dxdydz $$$$ \vec{v} = <v_1, v_2, v_3> $$$$ \begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+\end{bmatrix} 
+$$</div>
 
         </div><div id="footer" class="mb-5">
     <hr>

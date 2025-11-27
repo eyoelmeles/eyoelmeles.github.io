@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/get_better/</loc>
+    <lastmod>2025-11-27T16:39:04+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-18T20:05:17+08:00</lastmod>
+    <lastmod>2025-11-27T16:39:04+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-18T20:05:17+08:00</lastmod>
+    <lastmod>2025-11-27T16:39:04+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/risc-v/</loc>
     <lastmod>2025-09-18T20:05:17+08:00</lastmod>
@@ -22,9 +25,6 @@
   </url><url>
     <loc>http://localhost:1313/project/</loc>
     <lastmod>2025-01-02T19:53:22+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/iso-8583_financial_transation_standard/</loc>
-    <lastmod>2025-01-02T02:17:18+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/project/react-native/appstravaganza/</loc>
     <lastmod>2024-12-15T19:53:22+08:00</lastmod>

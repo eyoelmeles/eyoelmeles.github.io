@@ -6,7 +6,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
 
-  <title>Posts</title>
+  <title>A Friendly introduction to telegram bots api</title>
   <meta name="description" content="Personal Blog" />
   <meta name="author" content="Eyoel Meles" />
 
@@ -31,8 +31,6 @@
 
   
   <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
-   
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="Eyoel Meles" />
    
 </head>
 <link rel="stylesheet" href="sass/katex.min.css" />
@@ -106,29 +104,53 @@
 </div>
 <hr />
 <div id="content">
-<div class="container">
-  <h1>Posts</h1>
-  <ul class="container">
-    
-    <li>
-      <a href="http://localhost:1313/posts/get_better/"
-        >2025-11-27 | Get Better</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/risc-v/"
-        >2025-09-18 | RISC V</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/writing-paper/"
-        >2025-09-18 | Writing Paper with AI</a
-      >
-    </li>
-    
-  </ul>
+<div class="container"><h1 id="telegram-bots">Telegram Bots</h1>
+<h2 id="a-friendly-introduction-to-telegram-bots-api">A Friendly introduction to telegram bots api</h2>
+<p>a reply to bot A containing an explicit command for bot B or sent via bot C will only be available to bot A. Replies have the highest priority</p>
+<ul>
+<li>
+<p><strong>Bot Father</strong></p>
+<p>the Bot father sends one status alerts per bot per hour</p>
+<p>Each alert has 3 buttons</p>
+<p>[1] - <em>Fixed</em>: use this if we fixed the problem from the alert.</p>
+<p>[2] - <em>Support</em>: use this to open a chat with <a href="t.me/botsupport">Bot Support</a></p>
+<p>[3] - <em>Mute for 8h/1w</em>: use this if we can&rsquo;t fix it now, this way we don&rsquo;t get status alert every hour</p>
+</li>
+<li>
+<p><strong>Privacy mode</strong></p>
+<p>only receives commands, replies to its messages and mentions.
+a Bot in a group and privacy mode only recieves.</p>
+<ul>
+<li>messages that starts with <code>/</code></li>
+<li>replies to the bots own messages</li>
+<li>services messages(people added or removed from the group)</li>
+<li>messages from channels where it is a member</li>
+</ul>
+<p><em>by default</em> bots are in privacy mode, unless they are added as <em>admin</em>
+however we can get away without elevating the bot to admin, by using <em>ForceReply</em> if necessary.
+<strong>ForceReply</strong> will ask the user to reply to the message, as if they selected the message and
+pressed the reply button. <a href="https://core.telegram.org/bots/api#forcereply">More Read and Example</a></p>
+</li>
+<li>
+<p><strong>Deep-Linking</strong></p>
+<p>allows for passing additional parameters to the bot on startup.</p>
+</li>
+</ul>
+<h2 id="making-request">Making Request</h2>
+<p>We can download and run the <a href="https://github.com/tdlib/telegram-bot-api">Source Code</a> of the telegram api, and
+run it in our own server, this comes with some benefits listed <a href="https://core.telegram.org/bots/api#using-a-local-bot-api-server">here</a></p>
+<h2 id="updates">Updates</h2>
+<p>Two ways of getting updates</p>
+<p>[1] - Long Polling
+[2] - Webhooks</p>
+<p>The <em>getUpdates()</em> method will return the last 100 unconfirmed updates.
+to confirm an update, set the offset value to the last <code>update_id + 1</code>.
+this will confirm the all the updates from the last getUpdates call, therefore these
+updates will no longer be returned</p>
+<h2 id="dependancies">Dependancies</h2>
+<ul>
+<li><a href="https://github.com/tucnak/telebot">telebot-framwork</a></li>
+</ul>
 </div>
 
         </div><div id="footer" class="mb-5">

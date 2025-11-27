@@ -6,7 +6,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
 
-  <title>Posts</title>
+  <title>Typescript</title>
   <meta name="description" content="Personal Blog" />
   <meta name="author" content="Eyoel Meles" />
 
@@ -31,8 +31,6 @@
 
   
   <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
-   
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="Eyoel Meles" />
    
 </head>
 <link rel="stylesheet" href="sass/katex.min.css" />
@@ -106,29 +104,47 @@
 </div>
 <hr />
 <div id="content">
-<div class="container">
-  <h1>Posts</h1>
-  <ul class="container">
-    
-    <li>
-      <a href="http://localhost:1313/posts/get_better/"
-        >2025-11-27 | Get Better</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/risc-v/"
-        >2025-09-18 | RISC V</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/writing-paper/"
-        >2025-09-18 | Writing Paper with AI</a
-      >
-    </li>
-    
-  </ul>
+<div class="container"><p><img src="https://fedojo.com/wp-content/uploads/2019/05/typescript.png" alt="TypeScript banner from fedojo.com"></p>
+<p>This is a custom typescript doc!</p>
+<h2 id="table-of-content">Table of Content</h2>
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#the-challenge">The challenge</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+</li>
+<li><a href="#Getting-Started">Getting Started</a>
+<ul>
+<li><a href="#Basics">Basics</a></li>
+<li><a href="#useful-resources">Useful resources</a></li>
+<li><a href="#Examples-Built-With-Typescript">Examples Built with Typescript</a></li>
+</ul>
+</li>
+<li><a href="#author">Author</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul>
+<p>The one half famous javascript superset that doesn&rsquo;t make it though</p>
+<p><a href="./coffeescript">Coffeescript</a></p>
+<h2 id="what-is-typescript">What is Typescript</h2>
+<p>It is a superset of javascript meaning, the existing javascript code is already a typescript code,</p>
+<h2 id="basics">Basics</h2>
+<p>How do we get the types</p>
+<p>javascript without using typescript knows what the type of a variable is if it is instantiated with a value</p>
+<p>example
+<code>let name= &quot;Eyoel&quot;;</code>
+javascript knows the type of the variable <code>name</code> is <code>string</code> we can check it by using the typeof keyword. <code>typeof name</code> would return a string.</p>
+<p>typescript would let us utilize this feature of javascript to make sure we can explicitly declare it as a string,
+example
+<code>let name: string = &quot;Eyoel&quot;</code> or without having to initialize it without data <code>let name: string;</code>
+here just as the first example, we are using a variable <code>name</code> with a typeof string. but we are explicitly telling it to be a string, this will inforce the variable to only accept <code>string</code> as value for <code>name</code></p>
+<p>therefore typescript in a way is forcing our code to only work with some types, this is why it is typescript, as it focuses on types.</p>
+<p>Now for the big question <strong>what is Type</strong>?</p>
+<p>assuming we know javascript.</p>
+<p>javascript has 7 primitive types.
+number, string, boolean, object, undefined, symbol, none.</p>
+<p>well some might think this is all it is, typescript is just assinging types to variables. but typescript offers more to our coding experiences.</p>
+<p>first let&rsquo;s take sometime with the primitive types and then we go more to the intermidiate to advanced topics.</p>
 </div>
 
         </div><div id="footer" class="mb-5">

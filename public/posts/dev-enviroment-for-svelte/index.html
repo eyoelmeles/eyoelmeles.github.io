@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang=""><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <title>Dev Environment for Svelte</title>
+  <meta name="description" content="Personal Blog" />
+  <meta name="author" content="Eyoel Meles" />
+
+  
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+  />
+
+  
+  <link rel="stylesheet" href="/sass/researcher.min.css" />
+
+  
+  <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
+   
+</head>
+<link rel="stylesheet" href="sass/katex.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+  integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+  crossorigin="anonymous"
+/>
+<script defer src="/js/katex.min.js"></script>
+<script defer src="/js/auto-rennder.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+  integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+  integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
+  });
+</script>
+
+    <body><div class="container mt-5">
+  <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+    <a
+      class="navbar-brand mx-0 mr-sm-auto"
+      href="http://localhost:1313/"
+      title="Eyoel Meles"
+    >
+       Eyoel Meles
+    </a>
+    <div class="navbar-nav flex-row flex-wrap justify-content-center">
+        
+      <a
+        class="nav-item nav-link"
+        href="/"
+        title="index"
+      >
+        index
+      </a>
+      
+      <span class="nav-item navbar-text mx-1">/</span>
+       
+      <a
+        class="nav-item nav-link"
+        href="/posts/"
+        title="blogs"
+      >
+        blogs
+      </a>
+        
+    </div>
+  </nav>
+</div>
+<hr />
+<div id="content">
+<div class="container"><p>#vite #eslint #prettier #eslint:svelte3 #husky #lint-staged #TypeScript</p>
+<h1 id="development-environment-for-svelte-apps">Development Environment for Svelte Apps</h1>
+<h3 id="what-is-linting-and-in-how-many-ways-can-it-help-us">What is linting and in how many ways can it help us?</h3>
+<p><em>Linters</em> are tools integrated to editors that understand the programming language and try to help the developer by showing and fixing warnings and errors in realtime, And also help by inforcing to write a more consistent code.</p>
+<h2 id="creating-a-svelte-project-with-vite">Creating a Svelte project with vite</h2>
+<p>this blog uses the <code>npm</code> to manage packages.</p>
+<p>if you are using VsCode, download the svelte extention. and the go to the settings.json and add the following,</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#ba2121">&#34;eslint.validate&#34;</span><span style="">:</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// ...,
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#ba2121">&#34;svelte&#34;</span>
+</span></span><span style="display:flex;"><span>]<span style="">,</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ba2121">&#34;eslint.options&#34;</span><span style="">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;overrideConfig&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&#34;parserOptions&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&#34;createDefaultProgram&#34;</span>: <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>npm create vite@latest</code></p>
+<p>Select Svelte and TypeScript from the cli</p>
+<p>then cd into the project and install the dependancies.</p>
+<h2 id="linting">Linting</h2>
+<p>to install eslint install these dev dependacies.</p>
+<p>This will install eslint linter for svelte</p>
+<p><code>npm install --save-dev eslint eslint-plugin-svelte3</code></p>
+<p>To make eslint and typescript work together.</p>
+<p><code>npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin</code></p>
+<p>Installs prettier and make it work with eslint.</p>
+<p><code>npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier</code></p>
+<p>now we need to create eslint config file. to do so</p>
+<p><code>npm init @eslint/config</code></p>
+<p>then we have to integrate all the dev packages we intalled to this file for the linting process.</p>
+<p>in my case i choose the commonjs <code>.eslintrc.cjs</code> file extention.</p>
+<p>this is how my configured .eslintrc.cjs file looks like</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>module.exports <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>    env<span style="color:#666">:</span> {
+</span></span><span style="display:flex;"><span>        browser<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>        commonjs<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>        es2021<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">extends</span><span style="color:#666">:</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#ba2121">&#34;eslint:recommended&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ba2121">&#34;plugin:@typescript-eslint/recommended&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ba2121">&#34;plugin:@typescript-eslint/recommended-requiring-type-checking&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ba2121">&#34;plugin:prettier/recommended&#34;</span>,
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    overrides<span style="color:#666">:</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#408080;font-style:italic">// this stays the same
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>        {
+</span></span><span style="display:flex;"><span>            files<span style="color:#666">:</span> [<span style="color:#ba2121">&#34;*.svelte&#34;</span>],
+</span></span><span style="display:flex;"><span>            processor<span style="color:#666">:</span> <span style="color:#ba2121">&#34;svelte3/svelte3&#34;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    parser<span style="color:#666">:</span> <span style="color:#ba2121">&#34;@typescript-eslint/parser&#34;</span>,
+</span></span><span style="display:flex;"><span>    parserOptions<span style="color:#666">:</span> {
+</span></span><span style="display:flex;"><span>        ecmaVersion<span style="color:#666">:</span> <span style="color:#ba2121">&#34;latest&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#408080;font-style:italic">// eslint-disable-next-line no-undef
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>        tsconfigRootDir<span style="color:#666">:</span> __dirname,
+</span></span><span style="display:flex;"><span>        project<span style="color:#666">:</span> [<span style="color:#ba2121">&#34;./tsconfig.json&#34;</span>],
+</span></span><span style="display:flex;"><span>        extraFileExtensions<span style="color:#666">:</span> [<span style="color:#ba2121">&#34;.svelte&#34;</span>],
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    plugins<span style="color:#666">:</span> [<span style="color:#ba2121">&#34;svelte3&#34;</span>, <span style="color:#ba2121">&#34;@typescript-eslint&#34;</span>, <span style="color:#ba2121">&#34;prettier&#34;</span>],
+</span></span><span style="display:flex;"><span>    rules<span style="color:#666">:</span> {
+</span></span><span style="display:flex;"><span>        quotes<span style="color:#666">:</span> [<span style="color:#ba2121">&#34;error&#34;</span>, <span style="color:#ba2121">&#34;double&#34;</span>],
+</span></span><span style="display:flex;"><span>        semi<span style="color:#666">:</span> [<span style="color:#ba2121">&#34;error&#34;</span>, <span style="color:#ba2121">&#34;always&#34;</span>],
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    settings<span style="color:#666">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ba2121">&#34;svelte3/typescript&#34;</span><span style="color:#666">:</span> () =&gt; require(<span style="color:#ba2121">&#34;typescript&#34;</span>), <span style="color:#408080;font-style:italic">// pass the TypeScript package to the Svelte plugin
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    },
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>The <code>.prettierrc.cjs</code> file</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>module.exports <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>    tabWidth<span style="color:#666">:</span> <span style="color:#666">4</span>,
+</span></span><span style="display:flex;"><span>    semi<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    doubleQuote<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    trailingComma<span style="color:#666">:</span> <span style="color:#ba2121">&#34;es5&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now eslint will pick the prettier file and apply it to the project.</p>
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    <div class="container text-center">
+        <div class="row gx-5 justify-content-center">
+            
+                <a href="https://twitter.com/joelmcmeles" class="fab fa-twitter fa-1x" title="Twitter"></a>
+            
+                <a href="mailto:tojoelmeles@gmail.com" class="fas fa-envelope fa-1x" title="E-mail"></a>
+            
+        </div>
+    </div>
+    
+    
+        <div class="container text-center">
+            <a href="https://github.com/eyoelmeles" title="Eyoel Meles 2025"><small>Eyoel Meles 2025</small></a>
+        </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang=""><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <title>Frontend Development setups</title>
+  <meta name="description" content="Personal Blog" />
+  <meta name="author" content="Eyoel Meles" />
+
+  
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+  />
+
+  
+  <link rel="stylesheet" href="/sass/researcher.min.css" />
+
+  
+  <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
+   
+</head>
+<link rel="stylesheet" href="sass/katex.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+  integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+  crossorigin="anonymous"
+/>
+<script defer src="/js/katex.min.js"></script>
+<script defer src="/js/auto-rennder.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+  integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+  integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
+  });
+</script>
+
+    <body><div class="container mt-5">
+  <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+    <a
+      class="navbar-brand mx-0 mr-sm-auto"
+      href="http://localhost:1313/"
+      title="Eyoel Meles"
+    >
+       Eyoel Meles
+    </a>
+    <div class="navbar-nav flex-row flex-wrap justify-content-center">
+        
+      <a
+        class="nav-item nav-link"
+        href="/"
+        title="index"
+      >
+        index
+      </a>
+      
+      <span class="nav-item navbar-text mx-1">/</span>
+       
+      <a
+        class="nav-item nav-link"
+        href="/posts/"
+        title="blogs"
+      >
+        blogs
+      </a>
+        
+    </div>
+  </nav>
+</div>
+<hr />
+<div id="content">
+<div class="container"><h2 id="front-end-development">Front end development</h2>
+<h2 id="what-is-esbuild">what is esbuild?</h2>
+<h3 id="is-typescript-necessary-for-frontend-development">Is Typescript Necessary for frontend development?</h3>
+<h3 id="places-where-typescript-comes-handy">Places where typescript comes handy</h3>
+<h3 id="setting-up-typescript-with-frontend-frameworks">Setting up typescript with frontend frameworks</h3>
+<ul>
+<li><a href="./typescript.md">Getting Started with typescript</a></li>
+</ul>
+<h3 id="es-lint">es-lint</h3>
+<ul>
+<li>what is linting?</li>
+<li>es-lint
+<code>npx eslint --init</code>  # installs a bunch of dev dependancies(although there are some more useful deps missing like react-hooks, &hellip; ) and adds linting configuration eslintrc.cjs
+there is a flag to use with npm&rsquo;s install command that will make sure it installs all the dependancies the dependancy relies on it is: <code>npx install-peerdeps --dev eslint-config-airbnb</code>
+this also will install and extends frameworks linting styles.</li>
+<li>famous/widely used es-lint configurations
+<ul>
+<li>
+<p>airbnb overview and configurations
+install using eslint-config-airbnb like so: <code>npx install-peerdeps --dev eslint-config-airbnb</code>
+airbnb will override the default eslint:recommended, therefore we should remove that line from the extends section, and add &lsquo;airbnb&rsquo;, &lsquo;airbnb-typescript&rsquo;.</p>
+<p>and when it is typescript it also needs to have the location of tsconfig.json. to add it use the parseOptions: {&hellip;, project: &lsquo;./tsconfig.json&rsquo;} otherwise the .ts files will not be compiled to .js</p>
+<p>we should also config, the &ldquo;include&rdquo;: [&ldquo;eslintrc.cjs&rdquo;, &hellip;] to the tsconfig.json which will link them together so that the work really well together, when connected.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="prettier">Prettier</h3>
+<p>prettier can be configured to work with eslint,
+<code>npm i -D prettier eslint-config-prettier eslint-plugin-prettier</code>
+this will install prettier and program that let prettier utilize the eslint configs and any plugins installed from eslint.</p>
+<p>then prettier should be added to the plugin section of the eslintrc.cjs</p>
+<p>also add the <code>'plugin:prettier/recommended'</code> as the last element of extends section, at last because the extended plugins at top might have rules that do not go well with prettiers rules so we want to make sure they pass there requirements first</p>
+<ul>
+<li>configuration
+.prettierrc.cjs</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cjs" data-lang="cjs"><span style="display:flex;"><span>module.exports <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ba2121">&#34;trailingComma&#34;</span><span style="color:#666">:</span> <span style="color:#ba2121">&#34;es5&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ba2121">&#34;tabWidth&#34;</span><span style="color:#666">:</span> <span style="color:#666">4</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># .prettierrc or prettierrc.yml</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">trailingComma</span>:<span style="color:#bbb"> </span><span style="color:#ba2121">&#34;es5&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">tabWidth</span>:<span style="color:#bbb"> </span><span style="color:#666">4</span><span style="color:#bbb">
+</span></span></span></code></pre></div><h2 id="vite-for-frontend">VITE FOR FRONTEND</h2>
+<h2 id="testing">Testing</h2>
+<h3 id="vitest">Vitest</h3>
+<p>vitest is just a test runner, if finds test files and run them.</p>
+<p>install
+<code>npm install -D vitest</code></p>
+<ul>
+<li>configure vitest</li>
+</ul>
+<ol>
+<li>to create a new viteconfig file</li>
+<li>because we used vite to scaffold the project, we can use that file to add the test section.</li>
+</ol>
+<p>we should also add the vite.config.ts file to include section of tsconfig.json,</p>
+<p>eslint will complain because vite is not a dev dependancy but we want it to be a dev dependancy.</p>
+<ul>
+<li>eslint Extreneous dependancies error, happen when we use the dev dependancies in the code, in our case we need to do so for our test files, therefore we will disable the rule for that specific file.</li>
+</ul>
+<h3 id="testing-library">Testing Library</h3>
+<p>Testing library for a whole bunch of frameworks.</p>
+<p>However vitest and testing-library needs a bit more configurations to work together. which is <code>jest-dom</code></p>
+<p>installation:</p>
+<p><code>npm i -d @testing-library/react</code></p>
+<h3 id="what-is-jsdom">What is jsdom</h3>
+<p>it let us do web like things without a web-browser for testing.</p>
+<h3 id="finally-testing">finally testing</h3>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> {describe, it} from <span style="color:#ba2121">&#39;vitest&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> {render, screen} from <span style="color:#ba2121">&#39;@testing-library/react&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> App from <span style="color:#ba2121">&#39;./App&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>describe(<span style="color:#ba2121">&#39;App&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  it(<span style="color:#ba2121">&#34;Renders hello world&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// The way we typically do testing is by using
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// ARRANGE
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// ACT
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// EXPECT
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// ARRANGE
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    render(<span style="color:#666">&lt;</span>App <span style="color:#666">/&gt;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// ACT
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// will come in to play if we need to interact, like click a button.
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// EXPECT
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    expect(screen.getByRole(<span style="color:#ba2121">&#39;heading&#39;</span>, {
+</span></span><span style="display:flex;"><span>      level<span style="color:#666">:</span> <span style="color:#666">1</span>,
+</span></span><span style="display:flex;"><span>    })).toHaveTextContent(<span style="color:#ba2121">&#39;Hello, World!&#39;</span>)
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// testing react-router-dom
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  it (<span style="color:#ba2121">&#34;Renders the 404 page&#34;</span>), () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// ARRAGE
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    render(
+</span></span><span style="display:flex;"><span>      <span style="color:#666">&lt;</span>MemoryRouter initialEntries<span style="color:#666">=</span>{[<span style="color:#ba2121">&#39;/nonexisting-page&#39;</span>]}<span style="color:#666">&gt;</span>
+</span></span><span style="display:flex;"><span>        {<span style="color:#408080;font-style:italic">/* We want to give the App not the WrappedApp for the memory router */</span>}
+</span></span><span style="display:flex;"><span>        <span style="color:#666">&lt;</span>App <span style="color:#666">/&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#666">&lt;</span><span style="">/MemoryRouter&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#408080;font-style:italic">// EXPECT
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>      expect(
+</span></span><span style="display:flex;"><span>        screengetByRole(<span style="color:#ba2121">&#39;heading&#39;</span>, {level<span style="color:#666">:</span> <span style="color:#666">1</span>})
+</span></span><span style="display:flex;"><span>        .toHaveTextContent(<span style="color:#ba2121">&#34;Go home&#34;</span>)
+</span></span><span style="display:flex;"><span>      )
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>try to find an element and select it with <code>getByRole</code> therefore we can get an accecibility testing and component testing all in one go.
+otherwise  getByLabelTest, &hellip;</p>
+<p>try to not use the byId, because that is not how the user will interact with the website.</p>
+<h2 id="react-router">React Router</h2>
+<p>we should wrap the App component. with HashRouter or others.
+this way we can test the App compoent with the router, instead of the App compoenet being a wrapper for the rest of the page.</p>
+<p>the reason for not using BrowserRouter is it uses the <code>history router</code> the issue is if deployed to a static web server, the we have to allow 404 to redirect to the index.
+but with HashRoute will make sure we can deploy to a static cdn and we don&rsquo;t have to worry about redirect configurations.</p>
+<p>make a directory for pages that the top level comp will call.</p>
+<p>like a home.tsx and notfound.tsx</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> Home() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> &lt;<span style="color:#008000;font-weight:bold">h1</span>&gt;Hello, World<span style="color:#666">!</span>&lt;/<span style="color:#008000;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">export</span> <span style="color:#008000;font-weight:bold">default</span> Home;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> {Link} <span style="color:#008000;font-weight:bold">from</span> <span style="color:#ba2121">&#39;react-router-dom&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> NotFound() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">h1</span>&gt;Page not found <span style="color:#666">!</span>&lt;/<span style="color:#008000;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">Link</span> <span style="color:#7d9029">to</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;/&#34;</span>&gt;Go home&lt;/<span style="color:#008000;font-weight:bold">Link</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/&gt;
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">export</span> <span style="color:#008000;font-weight:bold">default</span> Home;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> {HashRouter, BrowserRouter, Route, Routes } from <span style="color:#ba2121">&#39;react-router&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> Home from <span style="color:#ba2121">&#39;./pages/Home&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> NotFound from <span style="color:#ba2121">&#39;./pages/notfound&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> App() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#008000;font-weight:bold">Rootes</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">Route</span> <span style="color:#7d9029">path</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;/&#34;</span> <span style="color:#7d9029">element</span><span style="color:#666">=</span>{Home} /&gt;
+</span></span><span style="display:flex;"><span>      {<span style="color:#408080;font-style:italic">/* this will run if all the above are not found.*/</span>}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">Route</span> <span style="color:#7d9029">path</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;*&#34;</span> <span style="color:#7d9029">element</span><span style="color:#666">=</span>{NotFound} /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#008000;font-weight:bold">Routes</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> WrappedApp() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#008000;font-weight:bold">HashRouter</span>&gt; {<span style="color:#408080;font-style:italic">/* this could be a BrowserRouter */</span>}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">App</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#008000;font-weight:bold">HashRouter</span>&gt;
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">export</span> <span style="color:#008000;font-weight:bold">default</span> WrappedApp;
+</span></span></code></pre></div><p>the test will still pass for the App.test.tsx</p>
+<h3 id="seting-up-route">Seting up Route.</h3>
+<h2 id="editors-setup-for-frontend-development-vim-vs-code">Editors setup for Frontend development (Vim Vs Code)</h2>
+<h2 id="typescript-with-nodejs">typescript with nodejs</h2>
+<ul>
+<li>
+<p>TypeScript should be installed as a dev dependancy.
+and this will make the tsc command work in this dir.</p>
+</li>
+<li>
+<p>building typescript files</p>
+<p>&ldquo;scripts&rdquo;: {
+&ldquo;build&rdquo;: &ldquo;tsc&rdquo; # this will generate the js code.
+}</p>
+</li>
+<li>
+<p>TSNODE
+node doesn&rsquo;t run a ts file.
+so we need a ts-note
+<code>npx ts-node example.ts</code> # this is similar to <code>tsc example.ts &amp;&amp; ./dist/example.js</code></p>
+</li>
+</ul>
+<h2 id="typescript-configuratonstsconfigjson">TypeScript Configuratons(tsconfig.json)</h2>
+<ul>
+<li>
+<p>to generate a tsconfig file.
+<code>npx tsc --init</code></p>
+</li>
+<li>
+<p>choosing the JavaScript version
+&ldquo;compilerOptions&rdquo;: {
+&ldquo;target&rdquo;: &ldquo;ESNext&rdquo;,
+&ldquo;outDir&rdquo;: &ldquo;./dist&rdquo;, # don&rsquo;t want to upload this file to github.
+}</p>
+</li>
+<li>
+<p>not generating a js file while there is a type errors.
+1 - &ldquo;strict&rdquo;: true,
+or
+2 - &ldquo;noEmitOnError&rdquo;: true</p>
+</li>
+</ul>
+<h1 id="vite-svelte-typescript-and-eslint-and-prettier">Vite Svelte TypeScript and eslint and prettier</h1>
+<p>vite is compiling esbuild and rollup together to have a really good and fast developer expriance.</p>
+<p>tsconfig.node.json vs tsconfig.json</p>
+<p>vite is running on our machine with nodejs this is why we need tsconfig.node.json.
+!research tsconfig.node.json</p>
+<h2 id="creating-a-vite-project">Creating a vite project.</h2>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  npm i vite@latest
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic"># or</span>
+</span></span><span style="display:flex;"><span>  yarn create vite
+</span></span></code></pre></div><p>for this blog i choose to use svelte with typescript.</p>
+<p>with vite, we can reference .tsx files inside an html, this is because when the browser requests the file, vite and esbuild work together to transpile it into js on the fly.</p>
+<p><strong>Question</strong></p>
+<p>what is the difference between assets and public folder?
+put static assets to the <em>assets folder</em> if they might be used in some sort of loader, minifier whatever to be processed before they are served.
+otherwise use the pubilc folder if they are served directly</p>
+<h2 id="es-lint-1">es-lint</h2>
+<p>installation</p>
+<p><code>yarn add -D eslint</code></p>
+<p>then to create to configuration file.</p>
+<p><code>yarn eslint --init</code></p>
+<p>this command will let us choose a framework(unfortunately svelete is not in it) and typescript for linting.</p>
+<h2 id="airbnb-linting-for-react-projects">airbnb linting for react-projects.</h2>
+<p><code>yarn add -D eslint-config-airbnb --peer</code></p>
+<p>this deependancy needs additional dependancies, that is why we have the <code>--peer</code> flag</p>
+<p>in this case we chose to use svelte,</p>
+<p><code>yarn add -D eslint-plugin-svelte3</code></p>
+<p>go to .eslintrc.cjs and add svelte3 to plugins,
+also make sure we are svelte3/svelte3 as a processor like so.</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cjs" data-lang="cjs"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  plugins<span style="color:#666">:</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#ba2121">&#39;svelte3&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ba2121">&#39;@typescript-eslint&#39;</span> <span style="color:#408080;font-style:italic">// add the TypeScript plugin
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  ],
+</span></span><span style="display:flex;"><span>  overrides<span style="color:#666">:</span> [ <span style="color:#408080;font-style:italic">// this stays the same
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    {
+</span></span><span style="display:flex;"><span>      files<span style="color:#666">:</span> [<span style="color:#ba2121">&#39;*.svelte&#39;</span>],
+</span></span><span style="display:flex;"><span>      processor<span style="color:#666">:</span> <span style="color:#ba2121">&#39;svelte3/svelte3&#39;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// ....
+</span></span></span></code></pre></div><p>now we can check if it is working correctly</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">let</span> count: <span style="color:#b00040">number</span> <span style="color:#666">=</span> <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> increment <span style="color:#666">=</span> () <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    count <span style="color:#666">+=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  $: <span style="color:#b00040">assignment</span> <span style="color:#666">=</span> [];
+</span></span><span style="display:flex;"><span>  assignment.length; <span style="color:#408080;font-style:italic">// incorrect no-unsafe-member-access error
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  <span style="color:#408080;font-style:italic">// You can work around this by doing
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">let</span> another_assignment: <span style="color:#b00040">string</span>[];
+</span></span><span style="display:flex;"><span>  $: <span style="color:#b00040">another_assignment</span> <span style="color:#666">=</span> [];
+</span></span><span style="display:flex;"><span>  another_assignment.length; <span style="color:#408080;font-style:italic">// OK
+</span></span></span></code></pre></div><p>this code above should complain using svelte3&rsquo;s linting plugin</p>
+<h2 id="checking-to-lint-before-commiting">Checking to lint before commiting</h2>
+<p>we use Husky and lint-stage to achive this process</p>
+<p>if you are using eslint and it is not working with .svelte files, then go to vscodes settengs.json and add the svelte language to the eslint.validate array.</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#ba2121">&#34;eslint.validate&#34;</span><span style="">:</span> [
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">//...,
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  <span style="color:#ba2121">&#34;svelte&#34;</span>
+</span></span><span style="display:flex;"><span>]<span style="">,</span>
+</span></span></code></pre></div><h3 id="adding-prettier-to-work-with-eslint">Adding prettier to work with eslint.</h3>
+<p>installation</p>
+<p><code>npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier</code></p>
+<p>go to <code>.eslintrc.cjs</code> file and add <code>prettier</code> to the plugins array, And also add the <code>plugin:prettier/recommended</code> to the last index of the extends array.</p>
+<p>to custumize prettier we can create .prettierrc.cjs in the root directory and eslint will pick it up.</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cjs" data-lang="cjs"><span style="display:flex;"><span>module.exports <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>  trailingComma<span style="color:#666">:</span> <span style="color:#ba2121">&#34;es5&#34;</span>,
+</span></span><span style="display:flex;"><span>  doubleQuote<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>  semi<span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>  tabWidth<span style="color:#666">:</span> <span style="color:#666">4</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>}
+</span></span></code></pre></div><h2 id="testing-could-be-a-bit-overwelming-to-put-it-here-on-one-post">TESTING COULD BE A BIT OVERWELMING TO PUT IT HERE ON ONE POST,</h2>
+<h3 id="testing-with-testing-library-and-vitest">Testing with testing-library and vitest</h3>
+<p>installation
+<code>npm install --save-dev @testing-library/svelte vitest jsdom</code></p>
+<p>to compile all the svelte components for testing we need to install a plugin.</p>
+<p><code>npm install --save-dev @sveltejs/vite-plugin-svelte @testing-library/jest-dom</code></p>
+<p><code>yarn add -D husky lint-staged</code></p>
+<p>now Husky will create a .husky folder and inside it will have a pre-commit hook.</p>
+<p>the file should look like this</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#bc7a00">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#bc7a00"></span>. <span style="color:#ba2121">&#34;</span><span style="color:#008000;font-weight:bold">$(</span>dirname <span style="color:#ba2121">&#34;</span><span style="color:#19177c">$0</span><span style="color:#ba2121">&#34;</span><span style="color:#008000;font-weight:bold">)</span><span style="color:#ba2121">/_/husky.sh
+</span></span></span><span style="display:flex;"><span><span style="color:#ba2121">
+</span></span></span><span style="display:flex;"><span><span style="color:#ba2121"># run lint-staged command
+</span></span></span><span style="display:flex;"><span><span style="color:#ba2121">yarn  lint-staged
+</span></span></span></code></pre></div><p>then inside the package.json:</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ba2121">&#34;lint-staged&#34;</span><span style="color:#666">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ba2121">&#34;*.{js,ts,svelte}&#34;</span><span style="color:#666">:</span> [<span style="color:#ba2121">&#34;svelte-check&#34;</span>, <span style="color:#ba2121">&#34;yarn lint:fix&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    <div class="container text-center">
+        <div class="row gx-5 justify-content-center">
+            
+                <a href="https://twitter.com/joelmcmeles" class="fab fa-twitter fa-1x" title="Twitter"></a>
+            
+                <a href="mailto:tojoelmeles@gmail.com" class="fas fa-envelope fa-1x" title="E-mail"></a>
+            
+        </div>
+    </div>
+    
+    
+        <div class="container text-center">
+            <a href="https://github.com/eyoelmeles" title="Eyoel Meles 2025"><small>Eyoel Meles 2025</small></a>
+        </div>
+    
+</div>
+</body>
+</html>

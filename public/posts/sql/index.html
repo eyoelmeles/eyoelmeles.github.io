@@ -6,7 +6,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
 
-  <title>Posts</title>
+  <title>Sql</title>
   <meta name="description" content="Personal Blog" />
   <meta name="author" content="Eyoel Meles" />
 
@@ -31,8 +31,6 @@
 
   
   <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
-   
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="Eyoel Meles" />
    
 </head>
 <link rel="stylesheet" href="sass/katex.min.css" />
@@ -106,29 +104,38 @@
 </div>
 <hr />
 <div id="content">
-<div class="container">
-  <h1>Posts</h1>
-  <ul class="container">
-    
-    <li>
-      <a href="http://localhost:1313/posts/get_better/"
-        >2025-11-27 | Get Better</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/risc-v/"
-        >2025-09-18 | RISC V</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/writing-paper/"
-        >2025-09-18 | Writing Paper with AI</a
-      >
-    </li>
-    
-  </ul>
+<div class="container"><h1 id="structured-query-language">Structured Query Language</h1>
+<p>DDL:
+DML:</p>
+<pre><code>Any modification the DML statement makes to the database is *transaction*
+Transactions made by the DML should then be controlled,
+They will be controlled by Transaction Control Language
+
+TCL:
+</code></pre>
+<p>HADOOP File System (HDFS)
+master slave nodes,</p>
+<ul>
+<li>devide files into blocks, for easy read and write</li>
+<li>replicate blocks for fault tolerance</li>
+</ul>
+<ul>
+<li>HeartBeat: slave nodes send signals to the master node to check if they still are represented</li>
+<li>Balancing: if slave crashes, master will give signal to the other datanodes to replicate until replication factor is met.</li>
+</ul>
+<p>MasterNode (NameNode):
+_ manage all slave nodes and assign task to them,
+_ execute file operations(open, close, rename, change directory)</p>
+<ul>
+<li>store metadata</li>
+</ul>
+<p>DataNode (SlaveNode):</p>
+<ul>
+<li>work with the files (read, write, processing)</li>
+<li>create, delete and replicate files if asked by the MasterNode</li>
+<li>Require high memory as data is actually stored here</li>
+<li>reponsible for replications on command</li>
+</ul>
 </div>
 
         </div><div id="footer" class="mb-5">

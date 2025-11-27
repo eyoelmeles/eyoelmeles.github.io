@@ -6,8 +6,15 @@
     <description>Recent content in Index on Eyoel Meles</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Sep 2025 20:05:17 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 16:39:04 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get_better</title>
+      <link>http://localhost:1313/posts/get_better/</link>
+      <pubDate>Thu, 27 Nov 2025 16:39:04 +0800</pubDate>
+      <guid>http://localhost:1313/posts/get_better/</guid>
+      <description>&lt;p&gt;Imposter syndrom can implicate a lot of things&lt;/p&gt;&#xA;&lt;p&gt;a lot of time it will show a lack of confidence in diving into the unknown&#xA;unwilling to be uncomfortable for a very long period of time.&#xA;unable to feel dumb for a very long time.&lt;/p&gt;&#xA;&lt;p&gt;a lot of people have been too comfortable in their life for a verry long time.&#xA;we have been aforded a lot of convincies through out the years, as humanity gets to evolve and we have got really lazy, &lt;strong&gt;Specially Mentally&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RISC V</title>
       <link>http://localhost:1313/posts/risc-v/</link>
@@ -21,13 +28,6 @@
       <pubDate>Thu, 18 Sep 2025 10:25:48 +0800</pubDate>
       <guid>http://localhost:1313/posts/writing-paper/</guid>
       <description>&lt;h1 id=&#34;writing-academic-papers-with-ai&#34;&gt;Writing academic papers with AI&lt;/h1&gt;&#xA;&lt;h3 id=&#34;tldr&#34;&gt;[TL;DR]&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key takeways&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t Do&amp;rsquo;s&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;AI or AI tools mainly should be used for better writing, &lt;em&gt;&lt;strong&gt;Do not let the AI do the Thinking&lt;/strong&gt;&lt;/em&gt; this kills the authenticity and credibility of the author. the AI should not claim an idea, it should come from the authors understanding.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t let AI or AI tools alther the figures, this could basically be considered as faking the results&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Overview of ISO 8583 Card Transaction Standard</title>
-      <link>http://localhost:1313/posts/iso-8583_financial_transation_standard/</link>
-      <pubDate>Thu, 02 Jan 2025 02:17:18 +0800</pubDate>
-      <guid>http://localhost:1313/posts/iso-8583_financial_transation_standard/</guid>
-      <description>&lt;h1 id=&#34;overview-of-iso-8583-card-transaction-standard&#34;&gt;Overview of ISO 8583 Card Transaction Standard&lt;/h1&gt;&#xA;&lt;p&gt;Set of standards, for transactions created by the card holders.&lt;/p&gt;</description>
     </item>
     <item>
       <title>React Native Appstravaganza</title>

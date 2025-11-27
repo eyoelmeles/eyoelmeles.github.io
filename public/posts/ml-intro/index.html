@@ -6,7 +6,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
 
-  <title>Posts</title>
+  <title>Introduction to Machine Learning</title>
   <meta name="description" content="Personal Blog" />
   <meta name="author" content="Eyoel Meles" />
 
@@ -31,8 +31,6 @@
 
   
   <link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico" />
-   
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="Eyoel Meles" />
    
 </head>
 <link rel="stylesheet" href="sass/katex.min.css" />
@@ -106,29 +104,74 @@
 </div>
 <hr />
 <div id="content">
-<div class="container">
-  <h1>Posts</h1>
-  <ul class="container">
-    
-    <li>
-      <a href="http://localhost:1313/posts/get_better/"
-        >2025-11-27 | Get Better</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/risc-v/"
-        >2025-09-18 | RISC V</a
-      >
-    </li>
-    
-    <li>
-      <a href="http://localhost:1313/posts/writing-paper/"
-        >2025-09-18 | Writing Paper with AI</a
-      >
-    </li>
-    
-  </ul>
+<div class="container"><h1 id="what-is-machine-learning">What is Machine Learning</h1>
+<p>Machines improving <strong>performance(P)</strong> at a <strong>task(T)</strong> from <strong>experience(E)</strong></p>
+<p>How to go about solving Machine Learning problems, in a retrospect</p>
+<p>Type of learning</p>
+<ul>
+<li>Supervised: labeled data inputs, to create a model for better pridiction
+eg:
+<ul>
+<li>Regressions: if the input&rsquo;s output are real numbers</li>
+<li>Classification: when the input&rsquo;s output are categories</li>
+</ul>
+</li>
+<li>Unsupervised: datas without the output as inputs, to create a model that best describes/represents a structures in the datas
+eg:
+<ul>
+<li>clusstering: structures the data into cluster/groups, sub group groups for better understanding of the data</li>
+</ul>
+</li>
+<li>Reinforcement learning: no data at the beginning, learn by interaction with the Task, like a robot trying to learn by experience
+eg:</li>
+</ul>
+<ol>
+<li>
+<p>Framing Learning Chess
+T = playing Chess
+P = win rate against opponents
+E = playing games agains itself, or players playing the bot with its task</p>
+</li>
+<li>
+<p>Data Curation and Analysis
+curation
+source/scrape
+collections
+labeling
+Data analysis &amp; visialization
+updating the curated datas missing values, false encodings, and more wrong and incosistencies</p>
+</li>
+<li>
+<p>Designing ML
+hypothesis class: model family
+loss function: formalize performance matrix
+optimization: take the data, and learn the model
+hyperparameters: parameters we choose for better outputs
+features</p>
+</li>
+<li>
+<p>Train</p>
+</li>
+<li>
+<p>Validate and Evaluate</p>
+</li>
+</ol>
+<h2 id="linear-regressionsupervised-learning">Linear Regression(Supervised Learning)</h2>
+<p>we take a linear line to classify points</p>
+<h3 id="loss-functions">Loss functions</h3>
+<ul>
+<li><strong>MSE</strong>: is better for computations, because it has a convex shape</li>
+<li><strong>MAE(Mean Absolute Error)</strong>: better for removing the outliers
+$$
+\frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i|
+$$</li>
+<li><strong>Mean Relative Error</strong>:
+$$ \frac{1}{n} \sum_{i=1}^n \frac{|y_i - \hat{y}_i|}{|y_i|} $$</li>
+<li>$R^2$ <strong>Score</strong>: better for showing how much variation is in the data
+$$ 1 - \frac{\text{MSE}}{\text{Variance}}$$</li>
+<li><strong>Pearson correlation</strong>:</li>
+<li><strong>Rank-order correlations</strong>:</li>
+</ul>
 </div>
 
         </div><div id="footer" class="mb-5">
