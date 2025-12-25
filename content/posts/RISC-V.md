@@ -1,7 +1,7 @@
 ---
 title: "RISC V"
 date: 2025-09-18T20:05:17+08:00
-draft: false
+draft: true
 ---
 
 # Dumping Random Scattered Knowledge on RISC-V

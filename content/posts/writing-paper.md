@@ -1,7 +1,7 @@
 ---
 title: "Writing Paper with AI"
 date: 2025-09-18T10:25:48+08:00
-draft: false
+draft: true
 ---
 
 # Writing academic papers with AI 
